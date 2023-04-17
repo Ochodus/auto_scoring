@@ -1,0 +1,1397 @@
+Scoring the method of student whose ID is: 2020006108
+===================================================
+Testing method: isort
+
+Method Inputs: 50 74 188 91 66 36 
+Method outputs: 188 91 74 66 50 36 
+Target outputs: 188 91 74 66 50 36 
+
+Method Inputs: 123 113 22 117 56 57 152 59 180 
+Method outputs: 180 152 123 117 113 59 57 56 22 
+Target outputs: 180 152 123 117 113 59 57 56 22 
+
+Method Inputs: 173 119 53 28 165 172 167 131 48 
+Method outputs: 173 172 167 165 131 119 53 48 28 
+Target outputs: 173 172 167 165 131 119 53 48 28 
+
+Method Inputs: 100 128 174 
+Method outputs: 174 128 100 
+Target outputs: 174 128 100 
+
+Method Inputs: 116 73 44 94 87 68 
+Method outputs: 116 94 87 73 68 44 
+Target outputs: 116 94 87 73 68 44 
+
+Method Inputs: 29 55 100 39 171 131 2 
+Method outputs: 171 131 100 55 39 29 2 
+Target outputs: 171 131 100 55 39 29 2 
+
+Method Inputs: 15 62 100 58 136 119 
+Method outputs: 136 119 100 62 58 15 
+Target outputs: 136 119 100 62 58 15 
+
+Method Inputs: 59 145 25 152 45 48 146 57 22 
+Method outputs: 152 146 145 59 57 48 45 25 22 
+Target outputs: 152 146 145 59 57 48 45 25 22 
+
+Method Inputs: 88 34 53 77 111 
+Method outputs: 111 88 77 53 34 
+Target outputs: 111 88 77 53 34 
+
+Method Inputs: 130 56 
+Method outputs: 130 56 
+Target outputs: 130 56 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse
+
+Method inputs: tbwxnrjahp 
+Method outputs: tbwxnrjahp 
+Target outputs: tbwxnrjahp 
+
+Method inputs: ihchsdyrad ssbjdfonvs ubxxkujgfs puiehlqvcc 
+Method outputs: puiehlqvcc ubxxkujgfs ssbjdfonvs ihchsdyrad 
+Target outputs: puiehlqvcc ubxxkujgfs ssbjdfonvs ihchsdyrad 
+
+Method inputs: apngensmlw kpqyryvugk qxhqccelgr 
+Method outputs: qxhqccelgr kpqyryvugk apngensmlw 
+Target outputs: qxhqccelgr kpqyryvugk apngensmlw 
+
+Method inputs: rmlrhydjqj aerqtbtujr vblulaymdn vmaqiiurya dgwgstsqsd ajfqluknnx 
+Method outputs: ajfqluknnx dgwgstsqsd vmaqiiurya vblulaymdn aerqtbtujr rmlrhydjqj 
+Target outputs: ajfqluknnx dgwgstsqsd vmaqiiurya vblulaymdn aerqtbtujr rmlrhydjqj 
+
+Method inputs: ovtiwovphl 
+Method outputs: ovtiwovphl 
+Target outputs: ovtiwovphl 
+
+Method inputs: zyiaubdvvj lhghqxqbfz ehiagaixcr zmotiwowbt potkcvxomq yfzjcfoerp uptpcnkxxc ammdltyckv 
+Method outputs: ammdltyckv uptpcnkxxc yfzjcfoerp potkcvxomq zmotiwowbt ehiagaixcr lhghqxqbfz zyiaubdvvj 
+Target outputs: ammdltyckv uptpcnkxxc yfzjcfoerp potkcvxomq zmotiwowbt ehiagaixcr lhghqxqbfz zyiaubdvvj 
+
+Method inputs: jmjpnoddtk sdcjtsbpku ygewmuiptg xccjpkdjxj ygxtqffmgl ikoemqipxw 
+Method outputs: ikoemqipxw ygxtqffmgl xccjpkdjxj ygewmuiptg sdcjtsbpku jmjpnoddtk 
+Target outputs: ikoemqipxw ygxtqffmgl xccjpkdjxj ygewmuiptg sdcjtsbpku jmjpnoddtk 
+
+Method inputs: egnzdpmwdy npwppzjodk qagofqwjao guchhtcayi fcojmlsrdw tlheseqhju gnlrsebzro 
+Method outputs: gnlrsebzro tlheseqhju fcojmlsrdw guchhtcayi qagofqwjao npwppzjodk egnzdpmwdy 
+Target outputs: gnlrsebzro tlheseqhju fcojmlsrdw guchhtcayi qagofqwjao npwppzjodk egnzdpmwdy 
+
+Method inputs: uhjsevgbfm iecwmyierh hbkxxuudly gwyjnaizun 
+Method outputs: gwyjnaizun hbkxxuudly iecwmyierh uhjsevgbfm 
+Target outputs: gwyjnaizun hbkxxuudly iecwmyierh uhjsevgbfm 
+
+Method inputs: trfbfwhogp lrwqhaobgb yvwqhqaopg mdmmtmrpwq irxijteyze qtiyeyvjpw zdgilrortf sxqpbubqoo 
+Method outputs: sxqpbubqoo zdgilrortf qtiyeyvjpw irxijteyze mdmmtmrpwq yvwqhqaopg lrwqhaobgb trfbfwhogp 
+Target outputs: sxqpbubqoo zdgilrortf qtiyeyvjpw irxijteyze mdmmtmrpwq yvwqhqaopg lrwqhaobgb trfbfwhogp 
+
+Current method: Correct
+---------------------------------------
+Testing method: sum
+
+Method inputs: 86.22 173.32 131.52 145.29 192.95 70.82 8.78 
+Method outputs: 808.9
+Target outputs: 808.9
+
+Method inputs: 142.53 10.2 116.48 48.36 12.93 70.76 117.13 58.47 116.35 83.77 
+Method outputs: 776.99
+Target outputs: 776.99
+
+Method inputs: 108.65 11.98 104.21 156.69 159.53 105.44 59.66 72.84 49.07 
+Method outputs: 828.06
+Target outputs: 828.06
+
+Method inputs: 86.72 190.15 12.23 186.38 
+Method outputs: 475.48
+Target outputs: 475.48
+
+Method inputs: 134.38 20.5 59.43 157.07 92.53 16.33 123.78 159.12 15.87 51.51 
+Method outputs: 830.54
+Target outputs: 830.54
+
+Method inputs: 26.83 7.66 86.74 3.76 4.42 140.79 
+Method outputs: 270.21
+Target outputs: 270.21
+
+Method inputs: 174.77 190.07 197.19 78.18 
+Method outputs: 640.21
+Target outputs: 640.21
+
+Method inputs: 119.67 5.09 
+Method outputs: 124.77
+Target outputs: 124.77
+
+Method inputs: 31.84 6.21 94.85 188.73 
+Method outputs: 321.62
+Target outputs: 321.62
+
+Method inputs: 96.81 91.24 175.47 163.42 
+Method outputs: 526.93
+Target outputs: 526.93
+
+Current method: Correct
+---------------------------------------
+Testing method: average
+
+Method inputs: 110 72 77 39 198 16 9 154 
+Method outputs: 110.0 91.0 86.33 74.5 99.2 85.33 74.43 84.38 
+Target outputs: 110.0 91.0 86.33 74.5 99.2 85.33 74.43 84.38 
+
+Method inputs: 133 172 67 116 97 40 175 0 40 
+Method outputs: 133.0 152.5 124.0 122.0 117.0 104.17 114.29 100.0 93.33 
+Target outputs: 133.0 152.5 124.0 122.0 117.0 104.17 114.29 100.0 93.33 
+
+Method inputs: 164 
+Method outputs: 164.0 
+Target outputs: 164.0 
+
+Method inputs: 90 170 64 142 34 72 145 138 91 
+Method outputs: 90.0 130.0 108.0 116.5 100.0 95.33 102.43 106.88 105.11 
+Target outputs: 90.0 130.0 108.0 116.5 100.0 95.33 102.43 106.88 105.11 
+
+Method inputs: 91 196 75 171 
+Method outputs: 91.0 143.5 120.67 133.25 
+Target outputs: 91.0 143.5 120.67 133.25 
+
+Method inputs: 145 159 186 129 85 29 17 
+Method outputs: 145.0 152.0 163.33 154.75 140.8 122.17 107.14 
+Target outputs: 145.0 152.0 163.33 154.75 140.8 122.17 107.14 
+
+Method inputs: 172 73 53 77 
+Method outputs: 172.0 122.5 99.33 93.75 
+Target outputs: 172.0 122.5 99.33 93.75 
+
+Method inputs: 7 0 6 
+Method outputs: 7.0 3.5 4.33 
+Target outputs: 7.0 3.5 4.33 
+
+Method inputs: 7 193 163 5 7 195 142 5 
+Method outputs: 7.0 100.0 121.0 92.0 75.0 95.0 101.71 89.63 
+Target outputs: 7.0 100.0 121.0 92.0 75.0 95.0 101.71 89.63 
+
+Method inputs: 53 82 47 62 183 131 184 76 83 
+Method outputs: 53.0 67.5 60.67 61.0 85.4 93.0 106.0 102.25 100.11 
+Target outputs: 53.0 67.5 60.67 61.0 85.4 93.0 106.0 102.25 100.11 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse_in_place
+
+Method inputs: rcnngkwjxe uafsyhziui piyrdoqdnt shorfwkzqx zprgjevaub mglxkkotrk ldhipaphaj hfxklwbpgn xswelizert 
+Method outputs: rcnngkwjxe uafsyhziui piyrdoqdnt shorfwkzqx zprgjevaub mglxkkotrk ldhipaphaj hfxklwbpgn xswelizert 
+Target outputs: xswelizert hfxklwbpgn ldhipaphaj mglxkkotrk zprgjevaub shorfwkzqx piyrdoqdnt uafsyhziui rcnngkwjxe 
+
+Method inputs: eztjzqzsem mdfrtbnimg htnmxqlfwo ojylusxsoq nqynecmgmq lpkegpztse 
+Method outputs: eztjzqzsem mdfrtbnimg htnmxqlfwo ojylusxsoq nqynecmgmq lpkegpztse 
+Target outputs: lpkegpztse nqynecmgmq ojylusxsoq htnmxqlfwo mdfrtbnimg eztjzqzsem 
+
+Method inputs: zobrwfehbb jpwavookqr cduyxzomcy pqlhiqxetm lmcwltbkhq nzdsrtcqeo 
+Method outputs: zobrwfehbb jpwavookqr cduyxzomcy pqlhiqxetm lmcwltbkhq nzdsrtcqeo 
+Target outputs: nzdsrtcqeo lmcwltbkhq pqlhiqxetm cduyxzomcy jpwavookqr zobrwfehbb 
+
+Method inputs: ohkpuxzbeq nyfieueqqd crkipnrekt zxeokuhqrp nawyoqdesh hxkrgqfykq xhussbmuov pyunmrlvum tjixugpykd pwjhcsvpmc 
+Method outputs: ohkpuxzbeq nyfieueqqd crkipnrekt zxeokuhqrp nawyoqdesh hxkrgqfykq xhussbmuov pyunmrlvum tjixugpykd pwjhcsvpmc 
+Target outputs: pwjhcsvpmc tjixugpykd pyunmrlvum xhussbmuov hxkrgqfykq nawyoqdesh zxeokuhqrp crkipnrekt nyfieueqqd ohkpuxzbeq 
+
+Method inputs: bptdvcakbt bgqkknymyz ujknwidskw yawsgxwkpi 
+Method outputs: bptdvcakbt bgqkknymyz ujknwidskw yawsgxwkpi 
+Target outputs: yawsgxwkpi ujknwidskw bgqkknymyz bptdvcakbt 
+
+Method inputs: dzwwpfbfib irlykdiaoi 
+Method outputs: dzwwpfbfib irlykdiaoi 
+Target outputs: irlykdiaoi dzwwpfbfib 
+
+Method inputs: xmitqcyulp vceuipadpp ctpqsbiorz sbuzspgyta vcyqbzdzwi hysrhsvxwc bgsqokmafj yforokaozh 
+Method outputs: xmitqcyulp vceuipadpp ctpqsbiorz sbuzspgyta vcyqbzdzwi hysrhsvxwc bgsqokmafj yforokaozh 
+Target outputs: yforokaozh bgsqokmafj hysrhsvxwc vcyqbzdzwi sbuzspgyta ctpqsbiorz vceuipadpp xmitqcyulp 
+
+Method inputs: mywrjkuwae zcurdmgqlv 
+Method outputs: mywrjkuwae zcurdmgqlv 
+Target outputs: zcurdmgqlv mywrjkuwae 
+
+Method inputs: abpdnzkjdu jsroaznejq 
+Method outputs: abpdnzkjdu jsroaznejq 
+Target outputs: jsroaznejq abpdnzkjdu 
+
+Method inputs: bvecpwhvsb ynbzwfjjnc dvmkdrqoot unprfclkqx jfulckiiod 
+Method outputs: bvecpwhvsb ynbzwfjjnc dvmkdrqoot unprfclkqx jfulckiiod 
+Target outputs: jfulckiiod unprfclkqx dvmkdrqoot ynbzwfjjnc bvecpwhvsb 
+
+Current method: Incorrect
+---------------------------------------
+Testing method: findIndex
+
+Method inputs(1): 4 5 1 4 4 3 6 1 6 7 9 1 1 6 3 3 0 2 5 9 6 0 4 2 7 2 2 2 7 6 7 0 9 0 2 
+Method inputs(2): 1
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 4 7 7 9 6 8 9 7 9 2 9 5 8 1 5 4 
+Method inputs(2): 2
+Method outputs: 9
+Target outputs: 9
+
+Method inputs(1): 7 0 5 3 3 5 5 3 9 9 5 6 8 2 6 5 3 4 8 6 2 8 0 9 4 0 7 9 4 3 1 7 0 0 9 1 3 2 3 8 0 9 5 4 2 7 5 2 3 0 2 3 3 6 3 9 5 1 6 7 0 2 7 9 2 3 8 3 1 9 1 4 3 8 2 7 2 5 5 5 7 2 
+Method inputs(2): 1
+Method outputs: 30
+Target outputs: 30
+
+Method inputs(1): 2 0 1 5 2 2 0 7 8 9 9 2 9 4 8 5 8 6 6 0 0 3 9 4 2 1 4 4 8 7 6 8 3 4 7 7 0 3 2 4 9 1 6 3 7 3 4 3 3 9 6 0 0 9 7 7 6 7 4 3 
+Method inputs(2): 6
+Method outputs: 17
+Target outputs: 17
+
+Method inputs(1): 3 7 0 3 4 7 9 1 5 0 8 9 9 0 4 4 5 9 2 0 5 1 9 8 1 7 9 3 4 9 1 0 6 2 8 1 
+Method inputs(2): 5
+Method outputs: 8
+Target outputs: 8
+
+Method inputs(1): 3 2 8 9 5 2 1 0 3 7 6 6 4 1 8 8 7 2 3 4 3 2 2 3 6 
+Method inputs(2): 1
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 4 6 1 6 9 2 3 4 9 9 6 2 1 5 8 
+Method inputs(2): 2
+Method outputs: 5
+Target outputs: 5
+
+Method inputs(1): 3 6 6 8 8 7 8 6 5 8 2 6 6 0 7 4 8 6 2 6 8 9 6 1 4 2 7 0 8 0 8 3 7 8 4 3 2 0 2 1 4 7 1 8 5 5 0 1 6 6 6 6 3 2 2 8 7 6 7 7 1 8 2 3 9 2 1 8 
+Method inputs(2): 6
+Method outputs: 1
+Target outputs: 1
+
+Method inputs(1): 0 8 5 3 0 8 4 8 4 6 
+Method inputs(2): 7
+Method outputs: -1
+Target outputs: -1
+
+Method inputs(1): 2 2 7 2 6 8 2 0 3 5 1 6 2 7 0 7 5 7 2 5 4 7 8 5 2 
+Method inputs(2): 2
+Method outputs: 0
+Target outputs: 0
+
+Current method: Correct
+---------------------------------------
+Total score: 5/6 (83.33%)
+
+
+Scoring the method of student whose ID is: 2020092688
+===================================================
+Testing method: isort
+
+Method Inputs: 28 
+Method outputs: 28 
+Target outputs: 28 
+
+Method Inputs: 185 129 20 3 76 
+Method outputs: 185 129 76 20 3 
+Target outputs: 185 129 76 20 3 
+
+Method Inputs: 20 72 57 158 161 161 2 186 
+Method outputs: 186 161 161 158 72 57 20 2 
+Target outputs: 186 161 161 158 72 57 20 2 
+
+Method Inputs: 158 140 101 85 
+Method outputs: 158 140 101 85 
+Target outputs: 158 140 101 85 
+
+Method Inputs: 127 2 127 11 
+Method outputs: 127 127 11 2 
+Target outputs: 127 127 11 2 
+
+Method Inputs: 27 192 167 160 177 
+Method outputs: 192 177 167 160 27 
+Target outputs: 192 177 167 160 27 
+
+Method Inputs: 140 
+Method outputs: 140 
+Target outputs: 140 
+
+Method Inputs: 55 36 112 91 49 110 143 99 
+Method outputs: 143 112 110 99 91 55 49 36 
+Target outputs: 143 112 110 99 91 55 49 36 
+
+Method Inputs: 108 163 105 3 85 141 40 
+Method outputs: 163 141 108 105 85 40 3 
+Target outputs: 163 141 108 105 85 40 3 
+
+Method Inputs: 183 130 92 123 80 66 
+Method outputs: 183 130 123 92 80 66 
+Target outputs: 183 130 123 92 80 66 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse
+
+Method inputs: cxcdehffzs wiyikqxtlj 
+Method outputs: wiyikqxtlj cxcdehffzs 
+Target outputs: wiyikqxtlj cxcdehffzs 
+
+Method inputs: eogtijvjcz svnzdepedf nfbfijneul uxlpoepnbn pqxcxmmthh zyjnsoelmt bvleewwkwf jdgnhkydtm hgumdvbsqn 
+Method outputs: hgumdvbsqn jdgnhkydtm bvleewwkwf zyjnsoelmt pqxcxmmthh uxlpoepnbn nfbfijneul svnzdepedf eogtijvjcz 
+Target outputs: hgumdvbsqn jdgnhkydtm bvleewwkwf zyjnsoelmt pqxcxmmthh uxlpoepnbn nfbfijneul svnzdepedf eogtijvjcz 
+
+Method inputs: sxtjelgjtu cssicwtsvj sisuunyqbs 
+Method outputs: sisuunyqbs cssicwtsvj sxtjelgjtu 
+Target outputs: sisuunyqbs cssicwtsvj sxtjelgjtu 
+
+Method inputs: viogqywmmz avyjbselow hkzkthysvw juekfywtrm qpnqezfmjo qevlgpsrpa hkbqwiepae fadnlqydqu iiqxbcxgpt nlkfzyhjce 
+Method outputs: nlkfzyhjce iiqxbcxgpt fadnlqydqu hkbqwiepae qevlgpsrpa qpnqezfmjo juekfywtrm hkzkthysvw avyjbselow viogqywmmz 
+Target outputs: nlkfzyhjce iiqxbcxgpt fadnlqydqu hkbqwiepae qevlgpsrpa qpnqezfmjo juekfywtrm hkzkthysvw avyjbselow viogqywmmz 
+
+Method inputs: sxerrzzzwh xyvakcwecf vfbsxxtzqj ucgftwxmor uxzbyvugni uzckcoguns iaurqivmop 
+Method outputs: iaurqivmop uzckcoguns uxzbyvugni ucgftwxmor vfbsxxtzqj xyvakcwecf sxerrzzzwh 
+Target outputs: iaurqivmop uzckcoguns uxzbyvugni ucgftwxmor vfbsxxtzqj xyvakcwecf sxerrzzzwh 
+
+Method inputs: hbaivnzkwm hyixqsxwbs jrjcbftous wsodieprhh amobntvtac tuvfznxkrj 
+Method outputs: tuvfznxkrj amobntvtac wsodieprhh jrjcbftous hyixqsxwbs hbaivnzkwm 
+Target outputs: tuvfznxkrj amobntvtac wsodieprhh jrjcbftous hyixqsxwbs hbaivnzkwm 
+
+Method inputs: brpotvnelj jbndnghkqh nebajgkckj vidqhkcajs phqszhjvay vmqgtkylet xxnumqxofw icpwinhtfx 
+Method outputs: icpwinhtfx xxnumqxofw vmqgtkylet phqszhjvay vidqhkcajs nebajgkckj jbndnghkqh brpotvnelj 
+Target outputs: icpwinhtfx xxnumqxofw vmqgtkylet phqszhjvay vidqhkcajs nebajgkckj jbndnghkqh brpotvnelj 
+
+Method inputs: axrgwzptic eoozudizyj cpqbbojovt wwlccxnufr khecyenxwq ouxclxohkx 
+Method outputs: ouxclxohkx khecyenxwq wwlccxnufr cpqbbojovt eoozudizyj axrgwzptic 
+Target outputs: ouxclxohkx khecyenxwq wwlccxnufr cpqbbojovt eoozudizyj axrgwzptic 
+
+Method inputs: uxaefebaob mguywfuacj exlhygmvyk jfnoxdicmq cfwykopvba 
+Method outputs: cfwykopvba jfnoxdicmq exlhygmvyk mguywfuacj uxaefebaob 
+Target outputs: cfwykopvba jfnoxdicmq exlhygmvyk mguywfuacj uxaefebaob 
+
+Method inputs: xcyyrkoakb fdfhxlappd fxbdqoznik mmpwxtxaog 
+Method outputs: mmpwxtxaog fxbdqoznik fdfhxlappd xcyyrkoakb 
+Target outputs: mmpwxtxaog fxbdqoznik fdfhxlappd xcyyrkoakb 
+
+Current method: Correct
+---------------------------------------
+Testing method: sum
+
+Method inputs: 88.62 182.67 9.48 146.79 9.75 83.35 141.04 24.56 29.86 
+Method outputs: 716.12
+Target outputs: 716.12
+
+Method inputs: 195.29 29.45 111.48 133.57 34.76 49.43 80.02 
+Method outputs: 634.0
+Target outputs: 634.0
+
+Method inputs: 121.25 172.3 185.72 68.5 
+Method outputs: 547.77
+Target outputs: 547.77
+
+Method inputs: 131.25 
+Method outputs: 131.25
+Target outputs: 131.25
+
+Method inputs: 184.94 102.67 113.79 64.16 
+Method outputs: 465.56
+Target outputs: 465.56
+
+Method inputs: 71.54 170.21 145.29 55.66 
+Method outputs: 442.69
+Target outputs: 442.69
+
+Method inputs: 125.52 98.24 31.46 105.6 112.43 71.05 144.92 164.0 174.71 
+Method outputs: 1027.93
+Target outputs: 1027.93
+
+Method inputs: 157.62 194.97 84.87 98.14 123.96 
+Method outputs: 659.56
+Target outputs: 659.56
+
+Method inputs: 3.15 
+Method outputs: 3.15
+Target outputs: 3.15
+
+Method inputs: 198.39 20.63 181.76 161.57 142.19 35.37 197.47 125.75 
+Method outputs: 1063.13
+Target outputs: 1063.13
+
+Current method: Correct
+---------------------------------------
+Testing method: average
+
+Method inputs: 97 110 79 104 
+Method outputs: 97.0 103.5 95.33 97.5 
+Target outputs: 97.0 103.5 95.33 97.5 
+
+Method inputs: 153 37 10 131 187 118 11 60 
+Method outputs: 153.0 95.0 66.67 82.75 103.6 106.0 92.43 88.38 
+Target outputs: 153.0 95.0 66.67 82.75 103.6 106.0 92.43 88.38 
+
+Method inputs: 120 0 115 73 39 81 36 
+Method outputs: 120.0 60.0 78.33 77.0 69.4 71.33 66.29 
+Target outputs: 120.0 60.0 78.33 77.0 69.4 71.33 66.29 
+
+Method inputs: 196 167 146 190 153 148 185 
+Method outputs: 196.0 181.5 169.67 174.75 170.4 166.67 169.29 
+Target outputs: 196.0 181.5 169.67 174.75 170.4 166.67 169.29 
+
+Method inputs: 16 
+Method outputs: 16.0 
+Target outputs: 16.0 
+
+Method inputs: 192 
+Method outputs: 192.0 
+Target outputs: 192.0 
+
+Method inputs: 116 
+Method outputs: 116.0 
+Target outputs: 116.0 
+
+Method inputs: 125 142 
+Method outputs: 125.0 133.5 
+Target outputs: 125.0 133.5 
+
+Method inputs: 32 171 140 18 56 127 159 179 17 40 
+Method outputs: 32.0 101.5 114.33 90.25 83.4 90.67 100.43 110.25 99.89 93.9 
+Target outputs: 32.0 101.5 114.33 90.25 83.4 90.67 100.43 110.25 99.89 93.9 
+
+Method inputs: 73 106 165 113 59 
+Method outputs: 73.0 89.5 114.67 114.25 103.2 
+Target outputs: 73.0 89.5 114.67 114.25 103.2 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse_in_place
+
+Method inputs: umqhfqcphh ckybornqgk ehsmgsfxgo 
+Method outputs: ehsmgsfxgo ckybornqgk umqhfqcphh 
+Target outputs: ehsmgsfxgo ckybornqgk umqhfqcphh 
+
+Method inputs: kgnxdeppaq ernqnnkosj mkniqrwnhn eshssnygpw uniagnjnps thrgldgway gpnbsbteaw 
+Method outputs: gpnbsbteaw thrgldgway uniagnjnps eshssnygpw mkniqrwnhn ernqnnkosj kgnxdeppaq 
+Target outputs: gpnbsbteaw thrgldgway uniagnjnps eshssnygpw mkniqrwnhn ernqnnkosj kgnxdeppaq 
+
+Method inputs: nxkdcgtlts cjkojcdkrs agsoraribo vkpqkbeoam hyqekboxeg shtjmkevlc bammemuntg hwhfedyfew kxpnnuznvw 
+Method outputs: kxpnnuznvw hwhfedyfew bammemuntg shtjmkevlc hyqekboxeg vkpqkbeoam agsoraribo cjkojcdkrs nxkdcgtlts 
+Target outputs: kxpnnuznvw hwhfedyfew bammemuntg shtjmkevlc hyqekboxeg vkpqkbeoam agsoraribo cjkojcdkrs nxkdcgtlts 
+
+Method inputs: awmsjgbcrt yuezdiznad 
+Method outputs: yuezdiznad awmsjgbcrt 
+Target outputs: yuezdiznad awmsjgbcrt 
+
+Method inputs: xeyvtbthpx 
+Method outputs: xeyvtbthpx 
+Target outputs: xeyvtbthpx 
+
+Method inputs: jxiwxsumyw bxhzmsluku auclbtxudt buayewxlgb jayjffhntc zgxteisire yuqknebauo tiveclmmwt opzxfupbbo 
+Method outputs: opzxfupbbo tiveclmmwt yuqknebauo zgxteisire jayjffhntc buayewxlgb auclbtxudt bxhzmsluku jxiwxsumyw 
+Target outputs: opzxfupbbo tiveclmmwt yuqknebauo zgxteisire jayjffhntc buayewxlgb auclbtxudt bxhzmsluku jxiwxsumyw 
+
+Method inputs: rtlpmupuxl uvmbdvgfxg dleyfarzko dybcfyavop lvvaboshat 
+Method outputs: lvvaboshat dybcfyavop dleyfarzko uvmbdvgfxg rtlpmupuxl 
+Target outputs: lvvaboshat dybcfyavop dleyfarzko uvmbdvgfxg rtlpmupuxl 
+
+Method inputs: hwwfsknffm zdomnmbvqe bpwfhdgcyw 
+Method outputs: bpwfhdgcyw zdomnmbvqe hwwfsknffm 
+Target outputs: bpwfhdgcyw zdomnmbvqe hwwfsknffm 
+
+Method inputs: cwpkkbwlqy rbfgmngccl zbhdubccea bnzcsttplq qvdufgaeze oxpjcutqci hdxnivoujn axjshijsgo 
+Method outputs: axjshijsgo hdxnivoujn oxpjcutqci qvdufgaeze bnzcsttplq zbhdubccea rbfgmngccl cwpkkbwlqy 
+Target outputs: axjshijsgo hdxnivoujn oxpjcutqci qvdufgaeze bnzcsttplq zbhdubccea rbfgmngccl cwpkkbwlqy 
+
+Method inputs: kywfadiqmr vefmyijzoa jigjoteppe gyaubufwmk 
+Method outputs: gyaubufwmk jigjoteppe vefmyijzoa kywfadiqmr 
+Target outputs: gyaubufwmk jigjoteppe vefmyijzoa kywfadiqmr 
+
+Current method: Correct
+---------------------------------------
+Testing method: findIndex
+
+Method inputs(1): 9 5 7 3 1 3 2 9 9 4 0 9 5 7 5 4 5 0 1 8 3 6 3 7 7 6 9 5 5 6 0 0 1 3 9 9 1 9 8 1 4 9 7 8 7 6 0 1 0 7 6 4 0 0 4 8 0 1 6 2 6 7 7 5 
+Method inputs(2): 7
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 8 0 4 7 3 7 8 9 6 6 4 4 7 8 3 1 6 5 7 0 1 8 5 6 8 6 4 0 4 5 9 7 5 7 4 9 1 4 8 8 5 6 7 7 7 2 8 6 9 3 4 5 6 
+Method inputs(2): 3
+Method outputs: 4
+Target outputs: 4
+
+Method inputs(1): 2 0 2 3 1 1 7 2 5 7 8 6 4 5 2 9 9 2 7 2 3 7 6 7 1 4 1 3 3 7 5 4 6 5 5 8 2 3 5 3 1 0 9 6 5 3 6 8 1 8 1 3 8 9 6 5 7 5 8 4 8 3 2 8 2 4 2 5 5 0 9 2 9 2 9 9 9 2 9 
+Method inputs(2): 5
+Method outputs: 8
+Target outputs: 8
+
+Method inputs(1): 7 7 3 6 1 4 4 9 9 0 4 9 3 1 3 6 3 3 4 5 5 7 9 0 3 8 0 4 6 5 0 9 7 3 2 8 6 1 8 3 0 9 5 9 8 2 3 2 6 8 5 5 3 7 7 1 8 5 0 6 4 4 3 7 4 4 5 6 9 3 4 7 6 9 6 6 9 0 4 8 5 5 2 8 0 6 6 4 3 1 9 0 9 9 8 1 
+Method inputs(2): 8
+Method outputs: 25
+Target outputs: 25
+
+Method inputs(1): 0 9 2 9 0 1 7 0 1 0 5 2 9 4 0 7 9 6 7 3 6 9 8 6 9 8 6 2 8 9 1 8 1 0 7 5 9 1 9 9 3 4 6 0 2 0 8 3 1 4 9 8 0 7 9 3 2 8 8 9 6 1 0 2 1 7 5 1 2 0 5 4 6 4 4 5 8 6 6 0 0 2 9 6 8 5 3 2 0 8 3 6 0 6 1 4 
+Method inputs(2): 8
+Method outputs: 22
+Target outputs: 22
+
+Method inputs(1): 3 5 8 5 6 1 2 8 9 1 7 5 6 2 5 5 4 8 3 8 0 4 4 3 8 2 1 6 8 6 9 3 4 9 6 3 6 9 3 6 2 8 9 7 0 0 2 8 4 9 7 2 7 6 
+Method inputs(2): 2
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 2 9 1 3 7 6 2 0 8 8 2 5 7 2 7 6 0 1 3 6 9 3 3 0 5 5 1 6 6 8 0 2 0 6 2 2 3 2 2 6 9 6 9 4 1 6 1 6 6 5 7 4 5 0 3 0 4 1 9 9 6 3 9 4 1 3 0 7 4 8 2 2 6 0 7 9 1 9 9 6 8 5 6 6 1 5 5 1 6 0 8 0 3 
+Method inputs(2): 1
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 9 7 6 5 8 7 1 9 9 8 4 8 2 7 2 1 3 5 9 9 9 4 
+Method inputs(2): 5
+Method outputs: 3
+Target outputs: 3
+
+Method inputs(1): 0 7 2 6 9 7 1 5 2 8 7 
+Method inputs(2): 1
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 5 1 1 6 1 5 7 1 6 4 7 4 8 3 5 6 6 5 5 9 9 6 3 9 5 2 6 2 5 6 5 0 5 5 0 6 2 8 6 3 8 6 6 9 1 8 1 4 
+Method inputs(2): 2
+Method outputs: 25
+Target outputs: 25
+
+Current method: Correct
+---------------------------------------
+Total score: 6/6 (100.0%)
+
+
+Scoring the method of student whose ID is: 2021062424
+===================================================
+Testing method: isort
+
+Method Inputs: 34 134 180 78 139 152 97 40 
+Method outputs: 180 152 139 134 97 78 40 34 
+Target outputs: 180 152 139 134 97 78 40 34 
+
+Method Inputs: 135 97 62 80 132 115 
+Method outputs: 135 132 115 97 80 62 
+Target outputs: 135 132 115 97 80 62 
+
+Method Inputs: 14 128 96 127 20 52 36 179 109 107 
+Method outputs: 179 128 127 109 107 96 52 36 20 14 
+Target outputs: 179 128 127 109 107 96 52 36 20 14 
+
+Method Inputs: 7 80 158 187 141 106 173 184 64 14 
+Method outputs: 187 184 173 158 141 106 80 64 14 7 
+Target outputs: 187 184 173 158 141 106 80 64 14 7 
+
+Method Inputs: 9 186 
+Method outputs: 186 9 
+Target outputs: 186 9 
+
+Method Inputs: 34 74 187 106 138 48 16 118 
+Method outputs: 187 138 118 106 74 48 34 16 
+Target outputs: 187 138 118 106 74 48 34 16 
+
+Method Inputs: 0 77 74 154 
+Method outputs: 154 77 74 0 
+Target outputs: 154 77 74 0 
+
+Method Inputs: 160 25 9 127 60 54 
+Method outputs: 160 127 60 54 25 9 
+Target outputs: 160 127 60 54 25 9 
+
+Method Inputs: 14 
+Method outputs: 14 
+Target outputs: 14 
+
+Method Inputs: 43 
+Method outputs: 43 
+Target outputs: 43 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse
+
+Method inputs: utjqehbzwk osfcdigirg ifmxxeatzn cftamjbkse cklywvbeuo wtsrorrzbt xtirjjubtl etcaekpkvj 
+Method outputs: etcaekpkvj xtirjjubtl wtsrorrzbt cklywvbeuo cftamjbkse ifmxxeatzn osfcdigirg utjqehbzwk 
+Target outputs: etcaekpkvj xtirjjubtl wtsrorrzbt cklywvbeuo cftamjbkse ifmxxeatzn osfcdigirg utjqehbzwk 
+
+Method inputs: danhqxedzd eboziydwtx xuzfxfmbgw wcnjydhnbb xspudaawtx ufixmdndaz 
+Method outputs: ufixmdndaz xspudaawtx wcnjydhnbb xuzfxfmbgw eboziydwtx danhqxedzd 
+Target outputs: ufixmdndaz xspudaawtx wcnjydhnbb xuzfxfmbgw eboziydwtx danhqxedzd 
+
+Method inputs: xxymzjhsff dfytfgndfp 
+Method outputs: dfytfgndfp xxymzjhsff 
+Target outputs: dfytfgndfp xxymzjhsff 
+
+Method inputs: ptiheiuwfx zeovpvzlxx cgfeaopwgr nbvjcuoxtr kavnbohugn gtgecnfauj 
+Method outputs: gtgecnfauj kavnbohugn nbvjcuoxtr cgfeaopwgr zeovpvzlxx ptiheiuwfx 
+Target outputs: gtgecnfauj kavnbohugn nbvjcuoxtr cgfeaopwgr zeovpvzlxx ptiheiuwfx 
+
+Method inputs: gbymekbdqq nmtrdpmvgk eqohvmfqma pbhzqdntis gwlyzqcelw 
+Method outputs: gwlyzqcelw pbhzqdntis eqohvmfqma nmtrdpmvgk gbymekbdqq 
+Target outputs: gwlyzqcelw pbhzqdntis eqohvmfqma nmtrdpmvgk gbymekbdqq 
+
+Method inputs: jffgmclehi pyvqkrovyi jxjhdjpiga jemasdhwzz elfsqyxfiy cjddajcjry tfnzjzjatz zhzbnvvygs pixjxvnmyt 
+Method outputs: pixjxvnmyt zhzbnvvygs tfnzjzjatz cjddajcjry elfsqyxfiy jemasdhwzz jxjhdjpiga pyvqkrovyi jffgmclehi 
+Target outputs: pixjxvnmyt zhzbnvvygs tfnzjzjatz cjddajcjry elfsqyxfiy jemasdhwzz jxjhdjpiga pyvqkrovyi jffgmclehi 
+
+Method inputs: lmgewxroee jhrvwjuray ybtmbnotyj rimsiqogba 
+Method outputs: rimsiqogba ybtmbnotyj jhrvwjuray lmgewxroee 
+Target outputs: rimsiqogba ybtmbnotyj jhrvwjuray lmgewxroee 
+
+Method inputs: swowkbsjtw 
+Method outputs: swowkbsjtw 
+Target outputs: swowkbsjtw 
+
+Method inputs: plzghedgyc ufpwamedsm ngimlcqeks hzlfwjorma tgsijasapv affurdtkjn 
+Method outputs: affurdtkjn tgsijasapv hzlfwjorma ngimlcqeks ufpwamedsm plzghedgyc 
+Target outputs: affurdtkjn tgsijasapv hzlfwjorma ngimlcqeks ufpwamedsm plzghedgyc 
+
+Method inputs: ozdzpergyo dquxyquxsg 
+Method outputs: dquxyquxsg ozdzpergyo 
+Target outputs: dquxyquxsg ozdzpergyo 
+
+Current method: Correct
+---------------------------------------
+Testing method: sum
+
+Method inputs: 198.7 2.12 156.29 119.93 85.46 163.03 
+Method outputs: 725.53
+Target outputs: 725.53
+
+Method inputs: 146.25 198.51 125.58 153.03 
+Method outputs: 623.37
+Target outputs: 623.37
+
+Method inputs: 36.83 152.93 14.05 64.91 12.21 97.76 
+Method outputs: 378.68
+Target outputs: 378.68
+
+Method inputs: 148.61 
+Method outputs: 148.61
+Target outputs: 148.61
+
+Method inputs: 176.54 95.3 144.34 94.27 135.08 142.83 136.66 14.55 117.55 
+Method outputs: 1057.11
+Target outputs: 1057.11
+
+Method inputs: 145.09 161.3 123.68 97.61 65.44 14.28 133.68 46.86 189.66 195.57 
+Method outputs: 1173.16
+Target outputs: 1173.16
+
+Method inputs: 21.03 47.97 73.24 107.19 
+Method outputs: 249.43
+Target outputs: 249.43
+
+Method inputs: 121.34 123.73 
+Method outputs: 245.08
+Target outputs: 245.08
+
+Method inputs: 66.75 52.17 134.85 
+Method outputs: 253.76
+Target outputs: 253.76
+
+Method inputs: 95.18 150.69 181.13 140.58 
+Method outputs: 567.58
+Target outputs: 567.58
+
+Current method: Correct
+---------------------------------------
+Testing method: average
+
+Method inputs: 126 105 117 127 48 32 121 108 81 
+Method outputs: 126.0 115.5 116.0 118.75 104.6 92.5 96.57 98.0 96.11 
+Target outputs: 126.0 115.5 116.0 118.75 104.6 92.5 96.57 98.0 96.11 
+
+Method inputs: 37 51 2 126 66 0 196 63 119 
+Method outputs: 37.0 44.0 30.0 54.0 56.4 47.0 68.29 67.63 73.33 
+Target outputs: 37.0 44.0 30.0 54.0 56.4 47.0 68.29 67.63 73.33 
+
+Method inputs: 167 175 141 2 30 87 82 54 
+Method outputs: 167.0 171.0 161.0 121.25 103.0 100.33 97.71 92.25 
+Target outputs: 167.0 171.0 161.0 121.25 103.0 100.33 97.71 92.25 
+
+Method inputs: 159 52 175 12 109 
+Method outputs: 159.0 105.5 128.67 99.5 101.4 
+Target outputs: 159.0 105.5 128.67 99.5 101.4 
+
+Method inputs: 173 182 
+Method outputs: 173.0 177.5 
+Target outputs: 173.0 177.5 
+
+Method inputs: 50 36 25 
+Method outputs: 50.0 43.0 37.0 
+Target outputs: 50.0 43.0 37.0 
+
+Method inputs: 52 131 2 108 188 153 89 161 198 100 
+Method outputs: 52.0 91.5 61.67 73.25 96.2 105.67 103.29 110.5 120.22 118.2 
+Target outputs: 52.0 91.5 61.67 73.25 96.2 105.67 103.29 110.5 120.22 118.2 
+
+Method inputs: 49 
+Method outputs: 49.0 
+Target outputs: 49.0 
+
+Method inputs: 39 193 24 109 191 189 158 162 
+Method outputs: 39.0 116.0 85.33 91.25 111.2 124.17 129.0 133.13 
+Target outputs: 39.0 116.0 85.33 91.25 111.2 124.17 129.0 133.13 
+
+Method inputs: 185 35 107 182 90 24 
+Method outputs: 185.0 110.0 109.0 127.25 119.8 103.83 
+Target outputs: 185.0 110.0 109.0 127.25 119.8 103.83 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse_in_place
+
+Method inputs: oewqchadxx jldbproiog 
+Method outputs: jldbproiog oewqchadxx 
+Target outputs: jldbproiog oewqchadxx 
+
+Method inputs: ygvizhrjoa vnqnzlyefi hmeygrrcjs gbprdujehx mwjxbkirgz zqeylvuslx mohjwdvffd dmhxoccqil rioimtomco 
+Method outputs: rioimtomco dmhxoccqil mohjwdvffd zqeylvuslx mwjxbkirgz gbprdujehx hmeygrrcjs vnqnzlyefi ygvizhrjoa 
+Target outputs: rioimtomco dmhxoccqil mohjwdvffd zqeylvuslx mwjxbkirgz gbprdujehx hmeygrrcjs vnqnzlyefi ygvizhrjoa 
+
+Method inputs: zbjwgjmetx geaykzadlb jdslmlppar 
+Method outputs: jdslmlppar geaykzadlb zbjwgjmetx 
+Target outputs: jdslmlppar geaykzadlb zbjwgjmetx 
+
+Method inputs: lgyfabuuqx jytxtuialj gzohjgjthe lhvvlulwpn cbgnyzqqtl auxjcbdiph inedpfhkth innjsmybal 
+Method outputs: innjsmybal inedpfhkth auxjcbdiph cbgnyzqqtl lhvvlulwpn gzohjgjthe jytxtuialj lgyfabuuqx 
+Target outputs: innjsmybal inedpfhkth auxjcbdiph cbgnyzqqtl lhvvlulwpn gzohjgjthe jytxtuialj lgyfabuuqx 
+
+Method inputs: vcmvdmcuaf sqyqypixpg csvzqagllj ftovmoaarc gplfbyaljf ahnwyielif envioabeti 
+Method outputs: envioabeti ahnwyielif gplfbyaljf ftovmoaarc csvzqagllj sqyqypixpg vcmvdmcuaf 
+Target outputs: envioabeti ahnwyielif gplfbyaljf ftovmoaarc csvzqagllj sqyqypixpg vcmvdmcuaf 
+
+Method inputs: fcuhfrpyvt ywrepietdd kfoszelvup bkinbpektv bvqqbxwaki jlgknopybd iahkagvbql eigmomwaaq feohnfswqd 
+Method outputs: feohnfswqd eigmomwaaq iahkagvbql jlgknopybd bvqqbxwaki bkinbpektv kfoszelvup ywrepietdd fcuhfrpyvt 
+Target outputs: feohnfswqd eigmomwaaq iahkagvbql jlgknopybd bvqqbxwaki bkinbpektv kfoszelvup ywrepietdd fcuhfrpyvt 
+
+Method inputs: plhxvhdcrd hheqqdsrqm mqsvgcipps ohqzzozhqd 
+Method outputs: ohqzzozhqd mqsvgcipps hheqqdsrqm plhxvhdcrd 
+Target outputs: ohqzzozhqd mqsvgcipps hheqqdsrqm plhxvhdcrd 
+
+Method inputs: gnzkgsqzae ezimhwrgxb vminqlraxn 
+Method outputs: vminqlraxn ezimhwrgxb gnzkgsqzae 
+Target outputs: vminqlraxn ezimhwrgxb gnzkgsqzae 
+
+Method inputs: idxszzvpsn ihjcfwslnn lcsyhblcev cuiefcobht elxumwsvzt uzqgteaxds rqjdpfmvzs hessajatau 
+Method outputs: hessajatau rqjdpfmvzs uzqgteaxds elxumwsvzt cuiefcobht lcsyhblcev ihjcfwslnn idxszzvpsn 
+Target outputs: hessajatau rqjdpfmvzs uzqgteaxds elxumwsvzt cuiefcobht lcsyhblcev ihjcfwslnn idxszzvpsn 
+
+Method inputs: suegohcdaa uxjstkpcgj jejplsdsfi psfdrfmkuc zsbjxvktze 
+Method outputs: zsbjxvktze psfdrfmkuc jejplsdsfi uxjstkpcgj suegohcdaa 
+Target outputs: zsbjxvktze psfdrfmkuc jejplsdsfi uxjstkpcgj suegohcdaa 
+
+Current method: Correct
+---------------------------------------
+Testing method: findIndex
+
+Method inputs(1): 4 1 6 3 6 8 0 9 3 4 6 3 3 2 1 
+Method inputs(2): 5
+Method outputs: -1
+Target outputs: -1
+
+Method inputs(1): 2 4 5 5 8 3 9 7 0 2 6 7 1 1 9 7 8 3 8 5 3 9 1 9 1 5 7 0 7 1 3 6 8 5 3 1 3 0 9 9 6 9 1 2 2 0 2 7 6 
+Method inputs(2): 6
+Method outputs: 10
+Target outputs: 10
+
+Method inputs(1): 4 0 3 8 0 1 2 1 6 7 6 8 4 6 0 8 1 1 0 8 3 3 4 2 1 6 6 3 4 1 7 9 5 1 7 3 6 1 8 0 5 9 6 6 7 4 8 2 5 3 8 1 2 4 5 5 9 6 4 4 1 9 7 4 1 6 0 1 9 2 9 1 2 6 8 5 9 6 8 5 1 8 7 4 4 7 5 8 2 
+Method inputs(2): 2
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 0 1 8 3 6 5 8 0 5 5 2 4 3 5 8 9 7 0 8 1 2 5 5 7 3 0 6 7 2 2 1 3 4 0 4 6 7 9 5 8 2 5 8 3 4 0 7 8 2 6 7 1 6 3 7 6 4 6 
+Method inputs(2): 5
+Method outputs: 5
+Target outputs: 5
+
+Method inputs(1): 7 5 9 4 1 2 6 6 
+Method inputs(2): 7
+Method outputs: 0
+Target outputs: 0
+
+Method inputs(1): 6 7 8 8 6 7 9 0 2 8 5 9 6 5 5 9 3 0 8 0 0 8 8 4 4 5 1 3 6 3 0 0 9 3 1 0 8 2 4 9 6 5 6 9 3 1 5 9 1 0 9 2 8 0 6 1 8 1 0 2 8 2 5 7 6 1 6 6 9 7 8 1 2 2 1 4 0 5 7 1 8 7 4 2 6 1 3 4 
+Method inputs(2): 7
+Method outputs: 1
+Target outputs: 1
+
+Method inputs(1): 5 3 4 9 1 1 3 3 5 2 1 0 0 3 3 8 4 2 1 6 2 6 2 9 4 7 6 7 8 2 9 3 1 8 6 2 9 3 9 4 6 3 4 7 8 8 8 
+Method inputs(2): 0
+Method outputs: 11
+Target outputs: 11
+
+Method inputs(1): 1 7 5 8 4 8 6 3 4 6 0 2 9 2 5 0 1 7 8 1 5 2 6 0 7 1 0 5 2 6 5 2 3 9 6 
+Method inputs(2): 6
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 6 4 3 2 7 1 4 5 9 1 8 3 9 1 4 7 3 0 2 7 4 3 
+Method inputs(2): 6
+Method outputs: 0
+Target outputs: 0
+
+Method inputs(1): 7 4 3 7 3 1 4 6 7 9 5 0 7 9 1 1 5 4 5 2 9 1 2 8 3 4 1 6 6 1 7 4 6 4 8 3 3 4 8 9 1 1 9 0 6 
+Method inputs(2): 9
+Method outputs: 9
+Target outputs: 9
+
+Current method: Correct
+---------------------------------------
+Total score: 6/6 (100.0%)
+
+
+Scoring the method of student whose ID is: 2021086126
+===================================================
+Testing method: isort
+
+Method Inputs: 195 
+Method outputs: 195 
+Target outputs: 195 
+
+Method Inputs: 1 104 104 103 15 92 103 63 6 
+Method outputs: 104 104 103 103 92 63 15 6 1 
+Target outputs: 104 104 103 103 92 63 15 6 1 
+
+Method Inputs: 192 8 158 173 40 32 44 144 89 
+Method outputs: 192 173 158 144 89 44 40 32 8 
+Target outputs: 192 173 158 144 89 44 40 32 8 
+
+Method Inputs: 70 179 58 13 
+Method outputs: 179 70 58 13 
+Target outputs: 179 70 58 13 
+
+Method Inputs: 50 152 118 80 26 121 132 36 111 168 
+Method outputs: 168 152 132 121 118 111 80 50 36 26 
+Target outputs: 168 152 132 121 118 111 80 50 36 26 
+
+Method Inputs: 117 112 170 92 
+Method outputs: 170 117 112 92 
+Target outputs: 170 117 112 92 
+
+Method Inputs: 127 36 37 
+Method outputs: 127 37 36 
+Target outputs: 127 37 36 
+
+Method Inputs: 84 111 49 126 129 97 155 
+Method outputs: 155 129 126 111 97 84 49 
+Target outputs: 155 129 126 111 97 84 49 
+
+Method Inputs: 128 185 29 39 41 31 141 
+Method outputs: 185 141 128 41 39 31 29 
+Target outputs: 185 141 128 41 39 31 29 
+
+Method Inputs: 104 166 184 192 35 150 27 192 1 178 
+Method outputs: 192 192 184 178 166 150 104 35 27 1 
+Target outputs: 192 192 184 178 166 150 104 35 27 1 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse
+
+Method inputs: kmdjdkzolu tnkujoouls 
+Method outputs: tnkujoouls kmdjdkzolu 
+Target outputs: tnkujoouls kmdjdkzolu 
+
+Method inputs: wlbkpqilwi bdrpqpwunm ywhgapyhes oxhkwoslez hnucaswmfy kukqkjntpr otzxaocmnm 
+Method outputs: otzxaocmnm kukqkjntpr hnucaswmfy oxhkwoslez ywhgapyhes bdrpqpwunm wlbkpqilwi 
+Target outputs: otzxaocmnm kukqkjntpr hnucaswmfy oxhkwoslez ywhgapyhes bdrpqpwunm wlbkpqilwi 
+
+Method inputs: iftvpfqggy 
+Method outputs: iftvpfqggy 
+Target outputs: iftvpfqggy 
+
+Method inputs: dnzdntnzvd poyifhifdq tjzpszjsbo jvdrwqpnhk mnadlvcnrz 
+Method outputs: mnadlvcnrz jvdrwqpnhk tjzpszjsbo poyifhifdq dnzdntnzvd 
+Target outputs: mnadlvcnrz jvdrwqpnhk tjzpszjsbo poyifhifdq dnzdntnzvd 
+
+Method inputs: natadjxoqi qlszqckhyg ltuhlqvnpa kubrnraqpx hfveowgmay fbyvwneklk 
+Method outputs: fbyvwneklk hfveowgmay kubrnraqpx ltuhlqvnpa qlszqckhyg natadjxoqi 
+Target outputs: fbyvwneklk hfveowgmay kubrnraqpx ltuhlqvnpa qlszqckhyg natadjxoqi 
+
+Method inputs: ntofzfszpk mhhhmyjfmr auhtzjbjal dqfcxucklm ctmfcgvuct qnjkcekgtf czutbxtkqn vfqzculvpq 
+Method outputs: vfqzculvpq czutbxtkqn qnjkcekgtf ctmfcgvuct dqfcxucklm auhtzjbjal mhhhmyjfmr ntofzfszpk 
+Target outputs: vfqzculvpq czutbxtkqn qnjkcekgtf ctmfcgvuct dqfcxucklm auhtzjbjal mhhhmyjfmr ntofzfszpk 
+
+Method inputs: lrotsjasnh vnqamikmnl fvswqbpnlp deuosiquic yfvhamidfd ntanljwnom szjnsrnqhq wejugnkgwf wfhwjklsys 
+Method outputs: wfhwjklsys wejugnkgwf szjnsrnqhq ntanljwnom yfvhamidfd deuosiquic fvswqbpnlp vnqamikmnl lrotsjasnh 
+Target outputs: wfhwjklsys wejugnkgwf szjnsrnqhq ntanljwnom yfvhamidfd deuosiquic fvswqbpnlp vnqamikmnl lrotsjasnh 
+
+Method inputs: nqzjvojsvl iajppbsnul gspctepikg acfrxshqrz 
+Method outputs: acfrxshqrz gspctepikg iajppbsnul nqzjvojsvl 
+Target outputs: acfrxshqrz gspctepikg iajppbsnul nqzjvojsvl 
+
+Method inputs: aqtfozvnbn ndnmrrrzpm funoehfbmc bkswyxzpog ukxyoajkoo qjmjaldged irchqlnaqd fzucrplbdi wrtknfflxq tezgtlmuhk 
+Method outputs: tezgtlmuhk wrtknfflxq fzucrplbdi irchqlnaqd qjmjaldged ukxyoajkoo bkswyxzpog funoehfbmc ndnmrrrzpm aqtfozvnbn 
+Target outputs: tezgtlmuhk wrtknfflxq fzucrplbdi irchqlnaqd qjmjaldged ukxyoajkoo bkswyxzpog funoehfbmc ndnmrrrzpm aqtfozvnbn 
+
+Method inputs: qjrbmzmgtg rtdbgedohy rytuxexjfj dtaxraptwo ilegqopmhj rmqaenmvbe jfukqokctw txjryvvqcx tynjpapqqb pstssgtocm 
+Method outputs: pstssgtocm tynjpapqqb txjryvvqcx jfukqokctw rmqaenmvbe ilegqopmhj dtaxraptwo rytuxexjfj rtdbgedohy qjrbmzmgtg 
+Target outputs: pstssgtocm tynjpapqqb txjryvvqcx jfukqokctw rmqaenmvbe ilegqopmhj dtaxraptwo rytuxexjfj rtdbgedohy qjrbmzmgtg 
+
+Current method: Correct
+---------------------------------------
+Testing method: sum
+
+Method inputs: 98.04 144.5 137.93 
+Method outputs: 380.48
+Target outputs: 380.48
+
+Method inputs: 136.14 4.28 109.69 186.43 32.7 50.66 106.14 129.12 
+Method outputs: 755.17
+Target outputs: 755.17
+
+Method inputs: 86.93 64.28 51.81 50.28 15.67 9.18 187.27 
+Method outputs: 465.43
+Target outputs: 465.43
+
+Method inputs: 153.36 1.76 77.98 59.58 146.69 89.53 68.32 136.5 147.54 191.33 
+Method outputs: 1072.59
+Target outputs: 1072.59
+
+Method inputs: 132.66 165.54 12.13 154.45 
+Method outputs: 464.78
+Target outputs: 464.78
+
+Method inputs: 97.33 78.91 88.64 179.34 26.06 94.72 166.58 80.44 
+Method outputs: 812.02
+Target outputs: 812.02
+
+Method inputs: 112.51 70.61 0.92 13.97 101.54 111.67 68.11 71.73 133.79 
+Method outputs: 684.84
+Target outputs: 684.84
+
+Method inputs: 43.33 
+Method outputs: 43.33
+Target outputs: 43.33
+
+Method inputs: 193.11 53.42 84.7 
+Method outputs: 331.23
+Target outputs: 331.23
+
+Method inputs: 192.83 66.54 126.75 191.63 31.7 45.28 
+Method outputs: 654.73
+Target outputs: 654.73
+
+Current method: Correct
+---------------------------------------
+Testing method: average
+
+Method inputs: 64 117 
+Method outputs: 64.0 90.5 
+Target outputs: 64.0 90.5 
+
+Method inputs: 97 191 34 140 
+Method outputs: 97.0 144.0 107.33 115.5 
+Target outputs: 97.0 144.0 107.33 115.5 
+
+Method inputs: 48 100 
+Method outputs: 48.0 74.0 
+Target outputs: 48.0 74.0 
+
+Method inputs: 33 22 
+Method outputs: 33.0 27.5 
+Target outputs: 33.0 27.5 
+
+Method inputs: 195 41 150 26 147 129 
+Method outputs: 195.0 118.0 128.67 103.0 111.8 114.67 
+Target outputs: 195.0 118.0 128.67 103.0 111.8 114.67 
+
+Method inputs: 34 58 132 45 67 5 66 164 24 134 
+Method outputs: 34.0 46.0 74.67 67.25 67.2 56.83 58.14 71.38 66.11 72.9 
+Target outputs: 34.0 46.0 74.67 67.25 67.2 56.83 58.14 71.38 66.11 72.9 
+
+Method inputs: 162 
+Method outputs: 162.0 
+Target outputs: 162.0 
+
+Method inputs: 163 194 124 41 146 97 146 133 
+Method outputs: 163.0 178.5 160.33 130.5 133.6 127.5 130.14 130.5 
+Target outputs: 163.0 178.5 160.33 130.5 133.6 127.5 130.14 130.5 
+
+Method inputs: 70 105 
+Method outputs: 70.0 87.5 
+Target outputs: 70.0 87.5 
+
+Method inputs: 178 146 101 
+Method outputs: 178.0 162.0 141.67 
+Target outputs: 178.0 162.0 141.67 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse_in_place
+
+Method inputs: bmmdejbqha 
+Method outputs: bmmdejbqha 
+Target outputs: bmmdejbqha 
+
+Method inputs: ctyfbaaatz sunlhbxrtz iwzqpbxlgq kairhtcggq owlhnjzrsp lzqvruwxxv 
+Method outputs: lzqvruwxxv owlhnjzrsp kairhtcggq iwzqpbxlgq sunlhbxrtz ctyfbaaatz 
+Target outputs: lzqvruwxxv owlhnjzrsp kairhtcggq iwzqpbxlgq sunlhbxrtz ctyfbaaatz 
+
+Method inputs: gtavzllfjj vvixyxnenr 
+Method outputs: vvixyxnenr gtavzllfjj 
+Target outputs: vvixyxnenr gtavzllfjj 
+
+Method inputs: tosikoouts tubqogelst hnwmtujotd hhwjfzkfig 
+Method outputs: hhwjfzkfig hnwmtujotd tubqogelst tosikoouts 
+Target outputs: hhwjfzkfig hnwmtujotd tubqogelst tosikoouts 
+
+Method inputs: hwxtzlerbw hjiafrboyw ubbmyvpehi jjnfkirjhe 
+Method outputs: jjnfkirjhe ubbmyvpehi hjiafrboyw hwxtzlerbw 
+Target outputs: jjnfkirjhe ubbmyvpehi hjiafrboyw hwxtzlerbw 
+
+Method inputs: ntjwvyshdj clnznrtkrc 
+Method outputs: clnznrtkrc ntjwvyshdj 
+Target outputs: clnznrtkrc ntjwvyshdj 
+
+Method inputs: szhzugcazd hkxznnimcc 
+Method outputs: hkxznnimcc szhzugcazd 
+Target outputs: hkxznnimcc szhzugcazd 
+
+Method inputs: ncrjfqdwlk vpntjbgclv wodawvtxpw rawevzvysm ihgnwuvatf fkorifanyp 
+Method outputs: fkorifanyp ihgnwuvatf rawevzvysm wodawvtxpw vpntjbgclv ncrjfqdwlk 
+Target outputs: fkorifanyp ihgnwuvatf rawevzvysm wodawvtxpw vpntjbgclv ncrjfqdwlk 
+
+Method inputs: pnsylhxkpk dzskroxeia ikxiazcneq dqgkyvxyyk tyuxejlovh szvhmiaigb kpieneekat ixznkiuund xgpbhuolep 
+Method outputs: xgpbhuolep ixznkiuund kpieneekat szvhmiaigb tyuxejlovh dqgkyvxyyk ikxiazcneq dzskroxeia pnsylhxkpk 
+Target outputs: xgpbhuolep ixznkiuund kpieneekat szvhmiaigb tyuxejlovh dqgkyvxyyk ikxiazcneq dzskroxeia pnsylhxkpk 
+
+Method inputs: iutfyfirwf ogomldqwjo zzmmwsooap nfpechxmsu bomqskcett zkmchmhwty ojvbwdigul avismnaekp vwfjpxhnbu shzvbbkfgf 
+Method outputs: shzvbbkfgf vwfjpxhnbu avismnaekp ojvbwdigul zkmchmhwty bomqskcett nfpechxmsu zzmmwsooap ogomldqwjo iutfyfirwf 
+Target outputs: shzvbbkfgf vwfjpxhnbu avismnaekp ojvbwdigul zkmchmhwty bomqskcett nfpechxmsu zzmmwsooap ogomldqwjo iutfyfirwf 
+
+Current method: Correct
+---------------------------------------
+Testing method: findIndex
+
+Method inputs(1): 6 7 4 9 5 1 6 3 2 4 9 7 1 9 5 6 3 0 8 6 1 4 3 2 5 1 2 0 7 6 8 9 9 2 8 8 3 1 9 6 6 9 6 6 7 2 3 9 5 4 5 
+Method inputs(2): 6
+Method outputs: 0
+Target outputs: 0
+
+Method inputs(1): 8 2 3 5 9 8 6 6 1 5 7 7 0 1 3 3 6 3 9 5 1 0 4 0 0 4 8 7 8 3 5 7 4 0 7 7 1 2 6 0 0 1 3 0 1 
+Method inputs(2): 9
+Method outputs: 4
+Target outputs: 4
+
+Method inputs(1): 6 1 0 4 9 6 2 7 6 8 7 6 5 4 5 2 7 9 3 3 6 6 1 1 2 1 0 6 4 1 7 8 0 3 3 
+Method inputs(2): 0
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 1 1 2 0 4 7 5 4 6 4 2 9 0 9 0 
+Method inputs(2): 2
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 7 4 5 8 9 5 8 0 6 8 5 0 9 8 
+Method inputs(2): 9
+Method outputs: 4
+Target outputs: 4
+
+Method inputs(1): 7 3 6 3 1 4 0 4 9 1 9 4 3 4 5 3 0 5 1 3 3 8 7 5 0 7 0 1 4 0 1 1 4 8 3 6 0 9 6 0 4 2 1 4 9 2 8 0 7 2 9 6 5 4 3 7 8 7 5 0 9 
+Method inputs(2): 9
+Method outputs: 8
+Target outputs: 8
+
+Method inputs(1): 7 8 7 2 8 2 1 8 6 0 0 7 0 7 3 1 6 1 5 6 2 6 3 4 9 5 5 7 7 0 1 3 3 2 0 9 7 9 4 0 5 0 1 5 2 4 9 6 7 2 8 5 8 8 4 8 0 7 8 3 2 9 4 4 5 2 0 9 2 0 3 6 1 6 5 5 2 6 4 6 6 8 2 4 3 7 7 4 8 4 1 6 1 7 6 
+Method inputs(2): 7
+Method outputs: 0
+Target outputs: 0
+
+Method inputs(1): 2 2 6 9 9 3 9 4 4 6 0 7 0 9 7 7 1 5 5 9 3 8 6 3 5 1 2 6 0 2 7 1 0 1 6 1 0 1 2 6 1 4 8 5 7 4 8 1 2 9 2 2 1 4 3 3 2 3 5 7 0 3 5 7 4 1 8 1 1 4 7 9 2 2 8 3 2 6 4 9 8 0 0 6 0 9 
+Method inputs(2): 9
+Method outputs: 3
+Target outputs: 3
+
+Method inputs(1): 8 8 8 7 2 4 8 9 1 6 9 5 0 
+Method inputs(2): 6
+Method outputs: 9
+Target outputs: 9
+
+Method inputs(1): 8 9 
+Method inputs(2): 8
+Method outputs: 0
+Target outputs: 0
+
+Current method: Correct
+---------------------------------------
+Total score: 6/6 (100.0%)
+
+
+Scoring the method of student whose ID is: 2021098177
+===================================================
+Testing method: isort
+
+Method Inputs: 49 187 114 162 106 
+Method outputs: 187 162 114 106 49 
+Target outputs: 187 162 114 106 49 
+
+Method Inputs: 54 199 132 5 30 
+Method outputs: 199 132 54 30 5 
+Target outputs: 199 132 54 30 5 
+
+Method Inputs: 96 183 59 21 9 64 108 
+Method outputs: 183 108 96 64 59 21 9 
+Target outputs: 183 108 96 64 59 21 9 
+
+Method Inputs: 140 142 49 169 19 
+Method outputs: 169 142 140 49 19 
+Target outputs: 169 142 140 49 19 
+
+Method Inputs: 5 3 105 119 197 138 73 79 94 
+Method outputs: 197 138 119 105 94 79 73 5 3 
+Target outputs: 197 138 119 105 94 79 73 5 3 
+
+Method Inputs: 55 
+Method outputs: 55 
+Target outputs: 55 
+
+Method Inputs: 59 98 168 92 19 106 149 126 193 
+Method outputs: 193 168 149 126 106 98 92 59 19 
+Target outputs: 193 168 149 126 106 98 92 59 19 
+
+Method Inputs: 177 46 29 176 12 12 64 
+Method outputs: 177 176 64 46 29 12 12 
+Target outputs: 177 176 64 46 29 12 12 
+
+Method Inputs: 33 75 
+Method outputs: 75 33 
+Target outputs: 75 33 
+
+Method Inputs: 193 106 115 170 148 75 131 6 
+Method outputs: 193 170 148 131 115 106 75 6 
+Target outputs: 193 170 148 131 115 106 75 6 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse
+
+Method inputs: bsrixqnnqd uzholnlgih fqycgtotsm uvlsjkbbbz pidggexniv 
+Method outputs: pidggexniv uvlsjkbbbz fqycgtotsm uzholnlgih bsrixqnnqd 
+Target outputs: pidggexniv uvlsjkbbbz fqycgtotsm uzholnlgih bsrixqnnqd 
+
+Method inputs: xsjtnodmpb ymqpukijtd 
+Method outputs: ymqpukijtd xsjtnodmpb 
+Target outputs: ymqpukijtd xsjtnodmpb 
+
+Method inputs: izbxnugkit jbzvjyohdv zduxrynzta aebvunurol azfuswhjun siacbmrhhe 
+Method outputs: siacbmrhhe azfuswhjun aebvunurol zduxrynzta jbzvjyohdv izbxnugkit 
+Target outputs: siacbmrhhe azfuswhjun aebvunurol zduxrynzta jbzvjyohdv izbxnugkit 
+
+Method inputs: wlbjwcaexa pdettjkljp zspxaasheg ggmikobozj bfexbxbvlr kiatmxsufw lahgvynhnl bfwgeyajdw zyokrzmbsj 
+Method outputs: zyokrzmbsj bfwgeyajdw lahgvynhnl kiatmxsufw bfexbxbvlr ggmikobozj zspxaasheg pdettjkljp wlbjwcaexa 
+Target outputs: zyokrzmbsj bfwgeyajdw lahgvynhnl kiatmxsufw bfexbxbvlr ggmikobozj zspxaasheg pdettjkljp wlbjwcaexa 
+
+Method inputs: dqdzdfkoxi epzrkbmzbn bnjiwwisdh gcotwykmdc rhjnvdlglt gcncynzxtf gezarfiuhj 
+Method outputs: gezarfiuhj gcncynzxtf rhjnvdlglt gcotwykmdc bnjiwwisdh epzrkbmzbn dqdzdfkoxi 
+Target outputs: gezarfiuhj gcncynzxtf rhjnvdlglt gcotwykmdc bnjiwwisdh epzrkbmzbn dqdzdfkoxi 
+
+Method inputs: kyggpwbqvt lmvyzzmqkb seyhryzzuf odvkbgquuf khqgwodmmq ytymkksrtn cgsmyzncev 
+Method outputs: cgsmyzncev ytymkksrtn khqgwodmmq odvkbgquuf seyhryzzuf lmvyzzmqkb kyggpwbqvt 
+Target outputs: cgsmyzncev ytymkksrtn khqgwodmmq odvkbgquuf seyhryzzuf lmvyzzmqkb kyggpwbqvt 
+
+Method inputs: psqlxpjjaa juloimdwsa msilgsvmuk dhjqsfaugt 
+Method outputs: dhjqsfaugt msilgsvmuk juloimdwsa psqlxpjjaa 
+Target outputs: dhjqsfaugt msilgsvmuk juloimdwsa psqlxpjjaa 
+
+Method inputs: tglnezfvjn rvvldttznu fxvnzujsko frcyhxlddd 
+Method outputs: frcyhxlddd fxvnzujsko rvvldttznu tglnezfvjn 
+Target outputs: frcyhxlddd fxvnzujsko rvvldttznu tglnezfvjn 
+
+Method inputs: rcnzmpfzmh zktgtkhugf dhonydqbts wdmybwcrhz omjmnnaonf rohxfoepdq xjikblsmhw ilqzrfssyw aizpdnriwr 
+Method outputs: aizpdnriwr ilqzrfssyw xjikblsmhw rohxfoepdq omjmnnaonf wdmybwcrhz dhonydqbts zktgtkhugf rcnzmpfzmh 
+Target outputs: aizpdnriwr ilqzrfssyw xjikblsmhw rohxfoepdq omjmnnaonf wdmybwcrhz dhonydqbts zktgtkhugf rcnzmpfzmh 
+
+Method inputs: xblfqmgffy mchntozkzv 
+Method outputs: mchntozkzv xblfqmgffy 
+Target outputs: mchntozkzv xblfqmgffy 
+
+Current method: Correct
+---------------------------------------
+Testing method: sum
+
+Method inputs: 5.62 37.58 93.71 81.02 121.52 126.33 
+Method outputs: 465.78
+Target outputs: 465.78
+
+Method inputs: 157.7 193.76 190.98 61.45 41.3 31.55 
+Method outputs: 676.73
+Target outputs: 676.73
+
+Method inputs: 22.03 97.3 39.4 174.41 106.54 87.44 116.68 84.8 172.38 
+Method outputs: 900.99
+Target outputs: 900.99
+
+Method inputs: 44.79 106.23 37.1 16.6 19.92 27.41 57.34 105.99 113.47 
+Method outputs: 528.85
+Target outputs: 528.85
+
+Method inputs: 158.13 52.36 134.31 27.71 14.38 142.85 149.09 75.97 
+Method outputs: 754.79
+Target outputs: 754.79
+
+Method inputs: 42.87 
+Method outputs: 42.87
+Target outputs: 42.87
+
+Method inputs: 162.47 100.99 115.85 168.77 95.6 182.17 29.18 
+Method outputs: 855.02
+Target outputs: 855.02
+
+Method inputs: 39.4 87.71 180.65 51.01 17.73 11.09 
+Method outputs: 387.59
+Target outputs: 387.59
+
+Method inputs: 187.34 59.62 89.06 192.06 171.53 40.53 145.28 168.02 81.9 
+Method outputs: 1135.34
+Target outputs: 1135.34
+
+Method inputs: 122.0 112.05 45.45 129.33 195.07 47.52 187.73 156.04 172.78 197.7 
+Method outputs: 1365.68
+Target outputs: 1365.68
+
+Current method: Correct
+---------------------------------------
+Testing method: average
+
+Method inputs: 151 59 23 
+Method outputs: 151.0 105.0 77.67 
+Target outputs: 151.0 105.0 77.67 
+
+Method inputs: 182 102 84 8 64 
+Method outputs: 182.0 142.0 122.67 94.0 88.0 
+Target outputs: 182.0 142.0 122.67 94.0 88.0 
+
+Method inputs: 26 179 80 48 
+Method outputs: 26.0 102.5 95.0 83.25 
+Target outputs: 26.0 102.5 95.0 83.25 
+
+Method inputs: 120 64 47 128 194 99 103 42 73 
+Method outputs: 120.0 92.0 77.0 89.75 110.6 108.67 107.86 99.63 96.67 
+Target outputs: 120.0 92.0 77.0 89.75 110.6 108.67 107.86 99.63 96.67 
+
+Method inputs: 155 6 159 38 
+Method outputs: 155.0 80.5 106.67 89.5 
+Target outputs: 155.0 80.5 106.67 89.5 
+
+Method inputs: 75 
+Method outputs: 75.0 
+Target outputs: 75.0 
+
+Method inputs: 19 
+Method outputs: 19.0 
+Target outputs: 19.0 
+
+Method inputs: 115 43 
+Method outputs: 115.0 79.0 
+Target outputs: 115.0 79.0 
+
+Method inputs: 103 158 31 23 143 62 188 0 
+Method outputs: 103.0 130.5 97.33 78.75 91.6 86.67 101.14 88.5 
+Target outputs: 103.0 130.5 97.33 78.75 91.6 86.67 101.14 88.5 
+
+Method inputs: 61 
+Method outputs: 61.0 
+Target outputs: 61.0 
+
+Current method: Correct
+---------------------------------------
+Testing method: reverse_in_place
+
+Method inputs: zogouvlbir cuqdjerory akflrxswbk hpwrvofclm airdslepcb ytbrdpyrxv zqmfhecydr 
+Method outputs: zqmfhecydr ytbrdpyrxv airdslepcb hpwrvofclm akflrxswbk cuqdjerory zogouvlbir 
+Target outputs: zqmfhecydr ytbrdpyrxv airdslepcb hpwrvofclm akflrxswbk cuqdjerory zogouvlbir 
+
+Method inputs: gyfehixhvc vltbreeols puewutbgfy drbpwmoraj ircpnqndjj 
+Method outputs: ircpnqndjj drbpwmoraj puewutbgfy vltbreeols gyfehixhvc 
+Target outputs: ircpnqndjj drbpwmoraj puewutbgfy vltbreeols gyfehixhvc 
+
+Method inputs: rtbndrsysz pgcmhvxgcq 
+Method outputs: pgcmhvxgcq rtbndrsysz 
+Target outputs: pgcmhvxgcq rtbndrsysz 
+
+Method inputs: nqvocgqusb joejdvdmwu 
+Method outputs: joejdvdmwu nqvocgqusb 
+Target outputs: joejdvdmwu nqvocgqusb 
+
+Method inputs: cjhntaxdyc jmwjthzaew tyzgiebvce qbyzsjcqqj wfnvxlujja ckgdwynnxv knrrcoxjbv 
+Method outputs: knrrcoxjbv ckgdwynnxv wfnvxlujja qbyzsjcqqj tyzgiebvce jmwjthzaew cjhntaxdyc 
+Target outputs: knrrcoxjbv ckgdwynnxv wfnvxlujja qbyzsjcqqj tyzgiebvce jmwjthzaew cjhntaxdyc 
+
+Method inputs: yjgekxdexx tonpunnobh ogmiavweqr qevttacvod zywkwnjjok 
+Method outputs: zywkwnjjok qevttacvod ogmiavweqr tonpunnobh yjgekxdexx 
+Target outputs: zywkwnjjok qevttacvod ogmiavweqr tonpunnobh yjgekxdexx 
+
+Method inputs: xayksszhdp zauuobxfpb qiecgtzukg mjwdvfcimr aabsnqcfjf yhiimxequa kjgjajvxog zbzisolilf 
+Method outputs: zbzisolilf kjgjajvxog yhiimxequa aabsnqcfjf mjwdvfcimr qiecgtzukg zauuobxfpb xayksszhdp 
+Target outputs: zbzisolilf kjgjajvxog yhiimxequa aabsnqcfjf mjwdvfcimr qiecgtzukg zauuobxfpb xayksszhdp 
+
+Method inputs: cgwohffbnc mtwnkwhpmt lufmdtnqnw laqkwreddl ueqzacbtsi dedywagkds rldowkzbfq mblzraoqtd 
+Method outputs: mblzraoqtd rldowkzbfq dedywagkds ueqzacbtsi laqkwreddl lufmdtnqnw mtwnkwhpmt cgwohffbnc 
+Target outputs: mblzraoqtd rldowkzbfq dedywagkds ueqzacbtsi laqkwreddl lufmdtnqnw mtwnkwhpmt cgwohffbnc 
+
+Method inputs: aesppuisdu rbejmhygla ouffwybkbh daxjqxnqbo nddzgbwwat hcisiukmew 
+Method outputs: hcisiukmew nddzgbwwat daxjqxnqbo ouffwybkbh rbejmhygla aesppuisdu 
+Target outputs: hcisiukmew nddzgbwwat daxjqxnqbo ouffwybkbh rbejmhygla aesppuisdu 
+
+Method inputs: cooxlmragm gytiyahrhg sdywhoycus umqvtgjwpx 
+Method outputs: umqvtgjwpx sdywhoycus gytiyahrhg cooxlmragm 
+Target outputs: umqvtgjwpx sdywhoycus gytiyahrhg cooxlmragm 
+
+Current method: Correct
+---------------------------------------
+Testing method: findIndex
+
+Method inputs(1): 5 2 4 9 1 9 6 4 2 0 4 6 6 1 6 6 2 6 0 5 6 8 5 9 2 2 6 3 9 9 9 6 8 9 1 0 5 0 4 6 6 6 7 5 7 4 0 3 1 4 7 7 4 2 7 9 0 2 8 8 3 5 8 7 4 3 5 5 7 7 1 0 9 8 8 3 9 5 7 7 9 3 0 
+Method inputs(2): 4
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 8 
+Method inputs(2): 3
+Method outputs: -1
+Target outputs: -1
+
+Method inputs(1): 5 8 5 7 1 3 3 1 6 1 3 2 2 5 4 9 5 8 1 1 1 2 2 4 7 8 4 6 4 8 4 8 6 4 5 6 4 8 1 7 0 1 0 1 0 7 5 6 5 0 8 7 5 6 9 2 8 7 1 4 7 1 5 5 0 6 2 4 5 5 7 0 8 5 1 6 9 9 9 9 2 9 
+Method inputs(2): 8
+Method outputs: 1
+Target outputs: 1
+
+Method inputs(1): 5 3 0 8 6 3 6 6 2 6 8 3 3 5 0 6 9 7 8 3 9 5 1 3 3 2 8 5 9 0 9 0 4 1 7 8 2 3 3 0 9 0 6 7 3 4 6 4 1 7 5 0 6 1 4 0 0 0 3 4 4 3 
+Method inputs(2): 8
+Method outputs: 3
+Target outputs: 3
+
+Method inputs(1): 6 2 0 6 5 5 6 3 7 
+Method inputs(2): 0
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 9 1 2 0 4 0 8 4 7 0 6 4 4 6 9 5 7 6 0 2 0 7 9 1 2 4 7 3 5 6 2 9 4 2 9 5 5 9 1 1 6 4 3 3 
+Method inputs(2): 7
+Method outputs: 8
+Target outputs: 8
+
+Method inputs(1): 7 5 5 2 2 6 8 1 4 7 0 1 9 1 2 2 5 1 4 7 3 6 6 3 2 7 3 8 0 0 2 6 9 4 0 6 2 
+Method inputs(2): 8
+Method outputs: 6
+Target outputs: 6
+
+Method inputs(1): 8 8 0 0 5 7 0 5 5 9 0 2 8 0 9 3 0 5 8 3 4 3 8 4 7 5 1 1 5 1 5 9 8 6 3 
+Method inputs(2): 9
+Method outputs: 9
+Target outputs: 9
+
+Method inputs(1): 9 8 0 5 0 3 1 7 8 3 9 1 7 3 5 5 4 1 3 2 7 9 2 1 9 2 2 9 4 4 1 8 3 8 3 4 0 4 4 4 0 8 0 9 3 6 1 0 3 8 3 6 3 6 1 6 3 2 9 1 4 4 2 8 9 7 9 5 6 7 9 7 0 1 2 9 4 8 4 6 4 6 1 
+Method inputs(2): 0
+Method outputs: 2
+Target outputs: 2
+
+Method inputs(1): 3 9 2 2 7 5 8 7 0 8 8 1 4 1 1 8 3 7 7 6 6 8 8 1 0 3 7 3 4 8 8 8 7 7 8 4 
+Method inputs(2): 0
+Method outputs: 8
+Target outputs: 8
+
+Current method: Correct
+---------------------------------------
+Total score: 6/6 (100.0%)
+
+
+
+

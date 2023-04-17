@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -125,7 +127,8 @@ class MethodsFinder {
 	private void loadClass() {
 		for (int i = 0; i < this.targetClass.length; i++) {
 			try {
-				classList.addAll(fcLoader.getClass(rootPath + classNum + "\\" + stdName + " " + stdNum, new String[] {pkgName + targetClass[i]}));
+				classList.addAll(fcLoader.getClass(rootPath + classNum + "\\" + stdName + " " + stdNum, targetClass));
+				
 			} catch(ClassNotFoundException e) {
 				if (verbose) {
 					System.out.print(this.stdNum + ": ");
@@ -335,7 +338,7 @@ class Scorer {
 		if (verbose) System.out.println("--------------------------------------------------------\n");
 	}
 	
-	public void testMethod(Solver std, String methodName) {
+	public void testMethod(Solver std, String methodName) throws InstantiationException, IllegalArgumentException, NoSuchMethodException, SecurityException, ClassNotFoundException, MalformedURLException {
 		if (verbose) System.out.println("Current method: " + methodName);
 		System.out.println("-----------------------------------------------------\n");
 		
@@ -346,31 +349,35 @@ class Scorer {
 		if (targetM != null && outputM != null) {
 			try {
 				switch (targetM.getName()) {
-				case "isort":
+				case "degree":
 					int[][] isortInput = ig.generateIntArr(10, 200, 10);
 					acc = true;
 					
 					for (int j = 0; j < isortInput.length; j++) {
-						int[] output = isortInput[j].clone();
-						int[] answer = isortInput[j].clone();
 						
-						outputM.invoke(std.getClazz("InsertionSort"), output);
-						targetM.invoke(teacher.getClazz("InsertionSort"), answer);
+						Constructor<?>[] cont = std.getClazz("cse2010.hw2.Poly").getConstructors();
+						System.out.println(cont[0]);
+						Object inst = cont[0].newInstance(0);
+						
+						Constructor<?>[] contM = teacher.getClazz("cse2010.hw2.Poly").getConstructors();
+						System.out.println(contM[0]);
+						Object instM = contM[0].newInstance(0);
+						
+						int output = (int)outputM.invoke(inst);
+						int answer = (int)targetM.invoke(instM);
 						
 						if (verbose) {
 							System.out.print("Method Inputs: ");
 							Scorer.printArray(isortInput[j]);
 							
-							System.out.print("Method outputs: ");
-							Scorer.printArray(output);
+							System.out.print("Method outputs: " + output);
 
-							System.out.print("Target outputs: ");
-							Scorer.printArray(answer);
+							System.out.print("Target outputs: " + answer);
 							
-							if (!Arrays.equals(output, answer)) acc = false;
+							if (output == answer) acc = false;
 							System.out.println();
 						}
-						else { if (!Arrays.equals(output, answer)) acc = false; }
+						else { if (output == answer) acc = false; }
 					}
 					
 					std.addScore(targetM.getName(), acc ? true : false);
@@ -598,14 +605,13 @@ class InvokeThread implements Runnable {
 
 public class Scoring {
 	
+	static String rootPath = "C:\\Users\\DBLab2\\Desktop\\Data_structure_assignment\\Submission\\";
+	static String[] classNum = {"A", "T"};
+	static String hwNum = "hw2\\";
 	
-	static String rootPath = "C:\\Users\\DBLab2\\Desktop\\자료구조 과제\\제출물\\";
-	static String[] classNum = {"A", "B", "T"};
-	static String hwNum = "hw1\\";
-	
-	static String pkgName = "cse2010.hw1.";
-	static String[] className = {"InsertionSort", "Utils"};
-	static String[] targetMethods = {"isort", "reverse", "sum", "average", "findIndex", "reverse_in_place"};
+	static String pkgName = "cse2010.hw2.";
+	static String[] className = {"cse2010.hw2.Poly", "cse2010.hw2.Term", "cse2010.hw2.Polynomial"};
+	static String[] targetMethods = {"degree"};
 	
 	static int[] scoreWeight = {3, 1, 1, 1, 1, 1};
 	
@@ -672,9 +678,9 @@ public class Scoring {
 		String[] stId = getStudentInfo(students, 2);
 		
 		Scorer sc = new Scorer(rootPath, hwNum, stClass, stName, stId, pkgName, className, targetMethods, createWeightMap(), verbose);
-		setOutputFile("Verbose");
+		//setOutputFile("Verbose");
 		sc.test_all();
-		setOutputFile("Scores");
+		//setOutputFile("Scores");
 		sc.printAllScore();
 		System.exit(0);
 	}
