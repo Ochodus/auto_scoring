@@ -32,6 +32,14 @@ class InputGenerator {
 		this.rand = new Random(seed);
 	}
 	
+	public int generateOneInt(int range) {
+		return rand.nextInt(range);
+	}
+	
+	public double generateOneDouble(int range) {
+		return rand.nextDouble(range);
+	}
+	
 	public int[] generateInt(int testSize, int range) {
 		int[] arr = new int[testSize];
 		for (int i = 0; i < testSize; i++) {
@@ -104,6 +112,10 @@ class MethodsFinder {
 	private ArrayList<Class<?>> classList = new ArrayList<Class<?>>();
 	private ArrayList<Method> methodList = new ArrayList<Method>();
 	
+	private InputGenerator ig = new InputGenerator(100);
+	
+	public Constructor<?>[] cons = null;
+	public Object[] objs = null;
 	
 	public MethodsFinder(String rootPath, String hwNum, String pkgName, String classNum, String stdName, String stdNum, String[] targetClass, String[] targetMethods, Boolean verbose) {
 		this.rootPath = rootPath;
@@ -122,6 +134,7 @@ class MethodsFinder {
 		
 		this.loadClass();
 		this.getMethods();
+		this.initConstructors();
 	}
 	
 	private void loadClass() {
@@ -192,6 +205,45 @@ class MethodsFinder {
 			}
 		}
 		return null;
+	}
+	
+	public void initConstructors() {
+		if (this.getClazz("cse2010.hw2.Poly") != null) this.cons = this.getClazz("cse2010.hw2.Poly").getConstructors();
+	}
+	
+	public Object createInstance(int consNum, Object args) {
+		Object inst = null;
+		try {
+			inst = this.cons[0].newInstance(args);
+		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+				| InvocationTargetException e) {
+			e.printStackTrace();
+		}
+		return inst;
+	}
+	
+	public void createRandInstances(int len) {
+		Object[] inst = new Object[len];
+		for (int i = 0; i < len; i++) {
+			try {
+				int maxTermLen = ig.generateOneInt(15) + 1;
+				inst[i] = (Object)this.cons[0].newInstance(maxTermLen);
+				
+				System.out.println(maxTermLen);
+				int addTermLen = ig.generateOneInt(maxTermLen);
+				for (int j = 0; j < addTermLen; j++) {
+					int coef = ig.generateOneInt(15);
+					
+					Method addTerm = this.getMethod("addTerm");
+					
+					addTerm.invoke(inst[i], coef, j);
+				}
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException e) {
+				e.printStackTrace();
+			}
+		}
+		this.objs = inst;
 	}
 	
 	public String getClassNum() {
@@ -345,88 +397,72 @@ class Scorer {
 		Boolean acc = true;
 		Method targetM = teacher.getMethod(methodName);
 		Method outputM = std.getMethod(methodName);
-
+		
+		int instanceNum = 10;
+		
+		Object[] inst = new Object[instanceNum];
+		Object[] instS = new Object[instanceNum];
+		
+		Method toString = teacher.getMethod("toString");
+		Method toStringS = std.getMethod("toString");
+		
+		int[] exp = new int[instanceNum];
+		
+		Boolean addTermCor = true;
+		
+		for (int i = 0; i < instanceNum; i++) {
+			try {
+				int maxTermLen = ig.generateOneInt(13) + 3;
+				inst[i] = (Object)teacher.cons[0].newInstance(maxTermLen);
+				instS[i] = (Object)std.cons[0].newInstance(maxTermLen);
+				
+				exp[i] = maxTermLen;
+				for (int j = 0; j < maxTermLen; j++) {
+					int coef = ig.generateOneInt(15);
+					
+					Method addTerm = teacher.getMethod("addTerm");
+					Method addTermS = std.getMethod("addTerm");
+					
+					if (coef > 0) {
+						addTerm.invoke(inst[i], coef, j);
+						addTermS.invoke(instS[i], coef, j);
+					}
+				}
+				
+				if (!toString.invoke(inst[i]).equals(toStringS.invoke(instS[i]))) addTermCor = false;
+				
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NullPointerException e) {
+				//e.printStackTrace();
+			}
+		}
+		
+		
+		
+		teacher.objs = inst;
+		std.objs = instS;
+		
 		if (targetM != null && outputM != null) {
 			try {
 				switch (targetM.getName()) {
 				case "degree":
-					int[][] isortInput = ig.generateIntArr(10, 200, 10);
 					acc = true;
 					
-					for (int j = 0; j < isortInput.length; j++) {
+					for (int j = 0; j < std.objs.length; j++) {
+						int output = (int)outputM.invoke(std.objs[j]);
+						int answer = (int)targetM.invoke(teacher.objs[j]);
 						
-						Constructor<?>[] cont = std.getClazz("cse2010.hw2.Poly").getConstructors();
-						System.out.println(cont[0]);
-						Object inst = cont[0].newInstance(0);
-						
-						Constructor<?>[] contM = teacher.getClazz("cse2010.hw2.Poly").getConstructors();
-						System.out.println(contM[0]);
-						Object instM = contM[0].newInstance(0);
-						
-						int output = (int)outputM.invoke(inst);
-						int answer = (int)targetM.invoke(instM);
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
 						
 						if (verbose) {
 							System.out.print("Method Inputs: ");
-							Scorer.printArray(isortInput[j]);
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ")");
 							
-							System.out.print("Method outputs: " + output);
+							System.out.print("Method outputs: " + output + "\n");
 
-							System.out.print("Target outputs: " + answer);
+							System.out.print("Target outputs: " + answer + "\n");
 							
-							if (output == answer) acc = false;
-							System.out.println();
-						}
-						else { if (output == answer) acc = false; }
-					}
-					
-					std.addScore(targetM.getName(), acc ? true : false);
-					
-					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
-					break;
-				case "reverse":
-					String[][] reverseInput = ig.generateStringArr(10, 10);
-					acc = true;
-					
-					for (int j = 0; j < reverseInput.length; j++) {
-						String[] output = (String[])outputM.invoke(std.getClazz("Utils"), (Object)reverseInput[j]);
-						String[] answer = (String[])targetM.invoke(teacher.getClazz("Utils"), (Object)reverseInput[j]);
-						
-						if (verbose) {
-							System.out.print("Method inputs: ");
-							Scorer.printArray(reverseInput[j]);
-							
-							System.out.print("Method outputs: ");
-							Scorer.printArray(output);
-							
-							System.out.print("Target outputs: ");
-							Scorer.printArray(answer);
-							
-							if (!Arrays.equals(output, answer)) acc = false;
-							System.out.println();
-						}
-						else { if (!Arrays.equals(output, answer)) acc = false; }
-					}
-					
-					std.addScore(targetM.getName(), acc ? true : false);
-					
-					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
-					break;
-				case "sum":
-					double[][] sumInput = ig.generateDoubleArr(10, 200, 10);
-					acc = true;
-					
-					for (int j = 0; j < sumInput.length; j++) {
-						double output = (double)outputM.invoke(std.getClazz("Utils"), sumInput[j]);
-						double answer = (double)targetM.invoke(teacher.getClazz("Utils"), sumInput[j]);
-						
-						if (verbose) {
-							System.out.print("Method inputs: ");
-							Scorer.printArray(sumInput[j]);
-							
-							System.out.println("Method outputs: " + Math.round(output * 100)/100.0);
-							System.out.println("Target outputs: " + Math.round(answer * 100)/100.0);
-
 							if (output != answer) acc = false;
 							System.out.println();
 						}
@@ -437,92 +473,193 @@ class Scorer {
 					
 					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
 					break;
-				case "average":
-					int[][] averageInput = ig.generateIntArr(10, 200, 10);
+				case "getTermCount":
 					acc = true;
 					
-					for (int j = 0; j < averageInput.length; j++) {
-						double[] output = (double[])outputM.invoke(teacher.getClazz("Utils"), averageInput[j]);
-						double[] answer = (double[])targetM.invoke(std.getClazz("Utils"), averageInput[j]);
+					for (int j = 0; j < std.objs.length; j++) {
+						int output = (int)outputM.invoke(std.objs[j]);
+						int answer = (int)targetM.invoke(teacher.objs[j]);
+						
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
 						
 						if (verbose) {
-							System.out.print("Method inputs: ");
-							Scorer.printArray(averageInput[j]);
+							System.out.print("Method Inputs: ");
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ")");
 							
-							System.out.print("Method outputs: ");
-							Scorer.printArray(output);
-							
-							System.out.print("Target outputs: ");
-							Scorer.printArray(answer);
-							
-							if (!Arrays.equals(output, answer)) acc = false;
-							System.out.println();
-						}
-						else { if (!Arrays.equals(output, answer)) acc = false; }
-					}
-					
-					std.addScore(targetM.getName(), acc ? true : false);
-					
-					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
-					break;
-				case "reverse_in_place":
-					String[][] ripInput = ig.generateStringArr(10, 10);
-					acc = true;
-					
-					for (int j = 0; j < ripInput.length; j++) {
-						String[] output = ripInput[j].clone();
-						String[] answer = ripInput[j].clone();
-						
-						outputM.invoke(std.getClazz("Utils"), (Object)output);
-						targetM.invoke(teacher.getClazz("Utils"), (Object)answer);
-						
-						if (verbose) {
-							System.out.print("Method inputs: ");
-							Scorer.printArray(ripInput[j]);
-							
-							System.out.print("Method outputs: ");
-							Scorer.printArray(output);
-							
-							System.out.print("Target outputs: ");
-							Scorer.printArray(answer);
-							
-							if (!Arrays.equals(output, answer)) acc = false;
-							System.out.println();
-						}
-						else { if (!Arrays.equals(output, answer)) acc = false; }
-					}
-					
-					std.addScore(targetM.getName(), acc ? true : false);
-					
-					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
-					break;
-				case "findIndex":
-					int[][] findIndexInput1 = ig.generateIntArr(10, 10, 100);
-					int[] findIndexInput2 = ig.generateInt(10, 10);
-					
-					for (int j = 0; j < findIndexInput1.length; j++) {
-						int output = (int)outputM.invoke(std.getClazz("Utils"), findIndexInput1[j], findIndexInput2[j]);
-						int answer = (int)targetM.invoke(teacher.getClazz("Utils"), findIndexInput1[j], findIndexInput2[j]);
-						
-						if (verbose) {
-							System.out.print("Method inputs(1): ");
-							Scorer.printArray(findIndexInput1[j]);
-							System.out.println("Method inputs(2): " + findIndexInput2[j]);
-							
-							System.out.println("Method outputs: " + output);
-							System.out.println("Target outputs: " + answer);
+							System.out.print("Method outputs: " + output + "\n");
+
+							System.out.print("Target outputs: " + answer + "\n");
 							
 							if (output != answer) acc = false;
 							System.out.println();
 						}
 						else { if (output != answer) acc = false; }
 					}
+					
 					std.addScore(targetM.getName(), acc ? true : false);
+					
+					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
+					break;
+				case "getCoefficient":
+					acc = true;
+					
+					for (int j = 0; j < std.objs.length; j++) {
+						
+						int exponential = ig.generateOneInt(exp[j]);
+						
+						int output = (int)outputM.invoke(std.objs[j], exponential);
+						int answer = (int)targetM.invoke(teacher.objs[j], exponential);
+						
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
+						
+						if (verbose) {
+							System.out.print("Method Inputs: ");
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ") / Exponent - " + exponential);
+							
+							System.out.print("Method outputs: " + output + "\n");
+
+							System.out.print("Target outputs: " + answer + "\n");
+							
+							if (output != answer) acc = false;
+							System.out.println();
+						}
+						else { if (output != answer) acc = false; }
+					}
+					
+					std.addScore(targetM.getName(), acc ? true : false);
+					
+					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
+					break;
+				case "addTerm":
+					for (int j = 0; j < std.objs.length; j++) {
+
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
+						
+						if (verbose) {
+							System.out.print("Method Inputs: Skip\n");
+
+							System.out.print("Method outputs: " + studentObj + "\n");
+
+							System.out.print("Target outputs: " + teacherObj + "\n\n");
+						}
+					}
+					
+					std.addScore(targetM.getName(), addTermCor ? true : false);
+					
+					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (addTermCor ? "Correct" : "Incorrect"));
+					break;
+				case "add":
+					acc = true;
+					
+					for (int j = 0; j < std.objs.length - 1; j++) {
+						
+						String inputObjS = (String)toStringS.invoke(std.objs[j+1]);
+						//String inputObj = (String)toString.invoke(teacher.objs[j+1]);
+						
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
+						
+						Object output = (Object)outputM.invoke(std.objs[j], (Object)(std.objs[j+1]));
+						Object target = (Object)targetM.invoke(teacher.objs[j], (Object)(teacher.objs[j+1]));
+
+						
+						String studentObjAfter = (String)std.getMethod("toString").invoke(output);
+						String teacherObjAfter = (String)toString.invoke(target);
+						
+						if (verbose) {
+							System.out.print("Method Inputs: ");
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ") / Poly - " + inputObjS);
+							
+							System.out.print("Method outputs: " + studentObjAfter + "\n");
+
+							System.out.print("Target outputs: " + teacherObjAfter + "\n");
+							
+							if (studentObjAfter.compareTo(teacherObjAfter) != 0) acc = false;
+							System.out.println();
+						}
+						else { if (studentObjAfter.compareTo(teacherObjAfter) != 0) acc = false; }
+					}
+					
+					std.addScore(targetM.getName(), acc ? true : false);
+					
+					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
+					break;
+				case "mult":
+					acc = true;
+					
+					for (int j = 0; j < std.objs.length - 1; j++) {
+						
+						String inputObjS = (String)toStringS.invoke(std.objs[j+1]);
+						//String inputObj = (String)toString.invoke(teacher.objs[j+1]);
+						
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
+						
+						Object output = (Object)outputM.invoke(std.objs[j], (Object)(std.objs[j+1]));
+						Object target = (Object)targetM.invoke(teacher.objs[j], (Object)(teacher.objs[j+1]));
+
+						
+						String studentObjAfter = (String)std.getMethod("toString").invoke(output);
+						String teacherObjAfter = (String)toString.invoke(target);
+						
+						if (verbose) {
+							System.out.print("Method Inputs: ");
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ") / Poly - " + inputObjS);
+							
+							System.out.print("Method outputs: " + studentObjAfter + "\n");
+
+							System.out.print("Target outputs: " + teacherObjAfter + "\n");
+							
+							if (studentObjAfter.compareTo(teacherObjAfter) != 0) acc = false;
+							System.out.println();
+						}
+						else { if (studentObjAfter.compareTo(teacherObjAfter) != 0) acc = false; }
+					}
+					
+					std.addScore(targetM.getName(), acc ? true : false);
+					
+					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
+					break;
+				case "eval":
+					acc = true;
+					
+					for (int j = 0; j < std.objs.length - 1; j++) {
+						
+						double input = Math.round(ig.generateOneDouble(20) * 100) / 100.00;
+						
+						String studentObj = (String)toStringS.invoke(std.objs[j]);
+						String teacherObj = (String)toString.invoke(teacher.objs[j]);
+						
+						Double output = Math.round((double)outputM.invoke(std.objs[j], input) * 100) / 100.00;
+						Double target = Math.round((double)targetM.invoke(teacher.objs[j], input) * 100) / 100.00;
+
+						if (verbose) {
+							System.out.print("Method Inputs: ");
+							System.out.println("Teacher - (" + teacherObj + ") / Student - (" + studentObj + ") / X value - " + input);
+							
+							System.out.print("Method outputs: " + output + "\n");
+
+							System.out.print("Target outputs: " + target + "\n");
+							
+							if (output.compareTo(target) != 0) acc = false;
+							System.out.println();
+						}
+						else { if (output.compareTo(target) != 0) acc = false; }
+					}
+					
+					std.addScore(targetM.getName(), acc ? true : false);
+					
 					if (verbose) System.out.println("Evaluation result of " + methodName + ": " + (acc ? "Correct" : "Incorrect"));
 					break;
 				}
 			} catch (InvocationTargetException e) {
-				if (verbose) System.out.println(e);
+				if (verbose) {
+					System.out.print(std.getId() + ": ");
+					System.out.println(e.getCause());
+				}
 			} catch (IllegalAccessException e) {
 				if (verbose) System.out.println(e);
 			}
@@ -606,14 +743,14 @@ class InvokeThread implements Runnable {
 public class Scoring {
 	
 	static String rootPath = "C:\\Users\\DBLab2\\Desktop\\Data_structure_assignment\\Submission\\";
-	static String[] classNum = {"A", "T"};
+	static String[] classNum = {"A", "B", "T"};
 	static String hwNum = "hw2\\";
 	
 	static String pkgName = "cse2010.hw2.";
 	static String[] className = {"cse2010.hw2.Poly", "cse2010.hw2.Term", "cse2010.hw2.Polynomial"};
-	static String[] targetMethods = {"degree"};
+	static String[] targetMethods = {"degree", "getTermCount", "getCoefficient", "addTerm", "add", "mult", "eval", "toString"};
 	
-	static int[] scoreWeight = {3, 1, 1, 1, 1, 1};
+	static int[] scoreWeight = {1, 1, 1, 1, 1, 1, 1, 0};
 	
 	static HashMap<String, Scorer> scorers = new HashMap<String, Scorer>();
 	
@@ -678,9 +815,9 @@ public class Scoring {
 		String[] stId = getStudentInfo(students, 2);
 		
 		Scorer sc = new Scorer(rootPath, hwNum, stClass, stName, stId, pkgName, className, targetMethods, createWeightMap(), verbose);
-		//setOutputFile("Verbose");
+		setOutputFile("Verbose");
 		sc.test_all();
-		//setOutputFile("Scores");
+		setOutputFile("Scores");
 		sc.printAllScore();
 		System.exit(0);
 	}
